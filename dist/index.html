@@ -32,7 +32,7 @@
     <!-- 页面[loading]-->
     <div class="loading-box page" template="loading" style="display: none;"><img class="loading" src="https://cunchu.site/ozzx/resource/loadingLogo.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
     <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><div class="top-bar">22:33</div><div class="top-image-box"><img class="top-image" src="./static/resource/top-image.png"><div class="name">佰鸾xi</div><img class="user-image" src="./static/resource/user-image.png"></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><p>#跟着人民网小编去打卡 看大凉山的过去与现在#<br>今天起，跟媛媛一起走进四川大凉山，前往布拖、昭觉、德昌和冕宁4县，探访这片土地的过去与现在。</p><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div></div></div>
+    <div class="page-1 page" template="page1" style="display: none;"><div class="top-bar">22:33</div><div class="scroll-box"><div class="top-image-box"><img class="top-image" src="./static/resource/top-image.png"><div class="name">佰鸾xi</div><img class="user-image" src="./static/resource/user-image.png"></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-1.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-2.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-3.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-4.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-5.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-6.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-7.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-8.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>农民夜校</h2><img class="conn-text" src="./static/resource/text-9.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-10.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div><div class="chart-box"><img class="user-image2" src="./static/resource/user-image-2.png"><div class="chart-conn"><h2>人民网媛媛</h2><img class="conn-text" src="./static/resource/text-11.png"><img src="./static/resource/test-1.png"><div class="time-box clear"><div class="time fl">3分钟前</div><div class="fr icon"></div></div></div></div></div></div></div>
     
 <!-- 框架script文件 -->
 <script src="./static/js/owo.core.js" type="text/javascript" charset="UTF-8"></script>
@@ -87,7 +87,23 @@ owo.script = {
       }
     }
   },
-  "page1": {}
+  "page1": {
+    "created": function created() {
+      var _this2 = this;
+
+      this.queryAll('.time-box .icon').forEach(function (element) {
+        console.log(element);
+        owo.tool.heart(element, function (e) {
+          element.classList.add('active');
+        });
+      });
+      console.log(autoScaleInfo.showHeight);
+      setTimeout(function () {
+        _this2.query('.scroll-box').style.height = autoScaleInfo.showHeight - 80 + 'px';
+      }, 100);
+    },
+    "fabulous": function fabulous() {}
+  }
 };
 </script>
 
@@ -95,5 +111,6 @@ owo.script = {
     <script src="https://cunchu.site/owo/plug/autoScale.js" type="text/javascript"  charset="UTF-8"></script>
     <script src="./static/js/main.js" type="text/javascript"  charset="UTF-8"></script>
 
+    <script src="./static/js/heart.js" type="text/javascript"  charset="UTF-8"></script>
   </body>
 </html>

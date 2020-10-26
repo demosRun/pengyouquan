@@ -1,25 +1,129 @@
 <template lang="pug">
 .page-1
   .top-bar 22:33
-  .top-image-box
-    img.top-image(src="@|top-image.png|")
-    .name 佰鸾xi
-    img.user-image(src="@|user-image.png|")
-  .chart-box
-    img.user-image2(src="@|user-image-2.png|")
-    .chart-conn
-      h2 人民网媛媛
-      p #跟着人民网小编去打卡 看大凉山的过去与现在#<br>今天起，跟媛媛一起走进四川大凉山，前往布拖、昭觉、德昌和冕宁4县，探访这片土地的过去与现在。
-      img(src="@|test-1.png|")
-      .time-box.clear
-        .time.fl 3分钟前
-        .fr.icon &#xe6ec;
+  .scroll-box
+    .top-image-box
+      img.top-image(src="@|top-image.png|")
+      .name 佰鸾xi
+      img.user-image(src="@|user-image.png|")
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-1.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-2.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-3.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-4.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-5.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-6.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-7.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-8.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 农民夜校
+        img.conn-text(src="@|text-9.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-10.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-11.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
 </template>
 
 <script>
   module.exports = {
     created: function () {
-
+      this.queryAll('.time-box .icon').forEach(element => {
+        console.log(element)
+        owo.tool.heart(element, (e) => {
+          element.classList.add('active')
+        })
+      });
+      console.log(autoScaleInfo.showHeight)
+      setTimeout(() => {
+        this.query('.scroll-box').style.height = autoScaleInfo.showHeight - 80 + 'px'
+      }, 100);
+      
+    },
+    fabulous: function () {
+      
     }
   }
 </script>
@@ -38,6 +142,10 @@
   font-family: "Microsoft YaHei";
   color: #484948;
   background-color: #ededed;
+}
+.scroll-box {
+  height: calc(100% - 80px);
+  overflow: auto;
 }
 .page-1 {
   background-color: white;
@@ -88,10 +196,25 @@
       font-family: "Microsoft YaHei";
       margin-bottom: 15px;
     }
+    img {
+      display: block;
+    }
   }
 }
 .time-box {
-  font-size: 26px;
-  line-height: 40px;
+  font-size: 28px;
+  line-height: 60px;
+  color: #3a3b3b;
+  margin-top: 10px;
+  .fr {
+    color: #adaaaa;
+    font-size: 40px;
+  }
+  .active {
+    color: red;
+  }
+}
+.conn-text {
+  margin: 30px 0;
 }
 </style>
