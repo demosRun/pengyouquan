@@ -1,0 +1,193 @@
+body, html, .page, .page-box {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  min-height: 100%;
+}
+
+.owo-animation {
+  overflow: hidden;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+.owo-animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+.owo-animation-forward {
+  z-index: 99;
+}
+
+img {
+  border: none;
+}
+
+[route-active="false"] {
+  display: none;
+}
+
+/* 清除浮动 */
+.clear:after {
+  content: "";
+  height: 0;
+  line-height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+  zoom: 1;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+.loading-box {
+  width: 100%;
+  height: 100%;
+  background-image: url('https://cunchu.site/ozzx/resource/lanse.jpg');
+}
+
+.loading-box .loading {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -16%;
+  bottom: 0;
+  margin: auto;
+}
+
+.loading-box .loading-bar {
+  position: absolute;
+  top: 0%;
+  bottom: 0%;
+  height: 20px;
+  background-color: white;
+  width: 80%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  border-radius: 20px;
+  padding: 10px;
+  box-shadow: 2px 3px 9px #5d739c;
+}
+
+.loading-box .num-bar {
+  background-color: #e47d6e;
+  height: 20px;
+  border-radius: 20px;
+  width: 0%;
+  transition: width 0.5s;
+}
+
+.loading-box .num,
+.loading-box .text {
+  position: absolute;
+  top: 0%;
+  bottom: -8%;
+  margin: auto;
+  line-height: 50px;
+  height: 50px;
+  font-size: 36px;
+  width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+.loading-box .text {
+  bottom: -14%;
+}
+.page-1 .top-bar {
+  background-image: url('../resource/top-bar.png');
+  height: 80px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  line-height: 86px;
+  font-size: 34px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  color: #484948;
+  background-color: #ededed;
+}
+
+.page-1 {
+  background-color: white;
+}
+
+.page-1 .top-image {
+  width: 100%;
+  display: block;
+}
+
+.page-1 .top-image-box {
+  position: relative;
+}
+
+.page-1 .top-image-box .name {
+  position: absolute;
+  right: 188px;
+  font-size: 32px;
+  color: white;
+  font-weight: bold;
+  bottom: 16px;
+}
+
+.page-1 .top-image-box .user-image {
+  position: absolute;
+  right: 40px;
+  bottom: -50px;
+}
+
+.page-1 .chart-box {
+  border-bottom: 1px solid #dedcdc;
+  padding: 30px 0;
+  position: relative;
+}
+
+.page-1 .chart-box .user-image2 {
+  position: absolute;
+  left: 20px;
+  top: 30px;
+}
+
+.page-1 .chart-box .chart-conn {
+  padding-left: 140px;
+  padding-right: 80px;
+}
+
+.page-1 .chart-box .chart-conn p {
+  font-size: 30px;
+  line-height: 42px;
+  color: #3a3b3b;
+  margin: 5px 0;
+  margin-bottom: 15px;
+}
+
+.page-1 .chart-box .chart-conn h2 {
+  font-size: 38px;
+  line-height: 40px;
+  color: #4f6aa2;
+  font-family: "Microsoft YaHei";
+  margin-bottom: 15px;
+}
+
+.page-1 .time-box {
+  font-size: 26px;
+  line-height: 40px;
+}
+
