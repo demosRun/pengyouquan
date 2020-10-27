@@ -1,220 +1,73 @@
 <template lang="pug">
 .page-1
-  .top-bar 22:33
-  .scroll-box
-    .top-image-box
-      img.top-image(src="@|top-image.png|")
-      .name 佰鸾xi
-      img.user-image(src="@|user-image.png|")
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-1.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-2.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-3.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-4.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-5.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-6.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-7.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-8.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 农民夜校
-        img.conn-text(src="@|text-9.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-10.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
-    .chart-box
-      img.user-image2(src="@|user-image-2.png|")
-      .chart-conn
-        h2 人民网媛媛
-        img.conn-text(src="@|text-11.png|")
-        img(src="@|test-1.png|")
-        .time-box.clear
-          .time.fl 3分钟前
-          .fr.icon &#xe6ec;
+  .so.so-0
+    img.so.so-1(src="@|2406.png|")
+    img.so.so-2(src="@|2405.png|")
+    img.so.so-3(src="@|2403.png|")
+    img.so.so-4(src="@|2179.png|")
+    img.so.so-5(src="@|2178.png|")
+    img.so.so-6(src="@|2177.png|")
+    img.so.so-7(src="@|2175.png|")
+    img.so.so-8(src="@|2404.jpg|")
 </template>
 
 <script>
   module.exports = {
-    created: function () {
-      this.queryAll('.time-box .icon').forEach(element => {
-        console.log(element)
-        owo.tool.heart(element, (e) => {
-          element.classList.add('active')
-        })
-      });
-      console.log(autoScaleInfo.showHeight)
+    show: function () {
       setTimeout(() => {
-        this.query('.scroll-box').style.height = autoScaleInfo.showHeight - 80 + 'px'
-      }, 100);
-      
-    },
-    fabulous: function () {
-      
+        owo.go('page2//scaleDown/moveFromBottom/true/scaleDown/moveFromTop')
+      }, 2000);
     }
   }
 </script>
 
 
 <style lang="less">
-.top-bar {
-  background-image: url('@|top-bar.png|');
-  height: 80px;
-  background-repeat: no-repeat;
-  background-position: center center;
-  text-align: center;
-  line-height: 86px;
-  font-size: 34px;
-  font-weight: bold;
-  font-family: "Microsoft YaHei";
-  color: #484948;
-  background-color: #ededed;
+.so-0 {
+  left: 0px;
+  top: 0px;
+  width: 750px;
+  height: 1507px;
+  z-index: 0;;
 }
-.scroll-box {
-  height: calc(100% - 80px);
-  overflow: auto;
+.so-1 {
+  left: 187px;
+  top: 230px;
+  z-index: -1;
 }
-.page-1 {
-  background-color: white;
+.so-2 {
+  left: 249px;
+  top: 232px;
+  z-index: -2;
 }
-.top-image {
-  width: 100%;
-  display: block;
+.so-3 {
+  left: 0px;
+  top: 1331px;
+  z-index: -3;
 }
-.top-image-box {
-  position: relative;
-  .name {
-    position: absolute;
-    right: 188px;
-    font-size: 32px;
-    color: white;
-    font-weight: bold;
-    bottom: 16px;
-  }
-  .user-image {
-    position: absolute;
-    right: 40px;
-    bottom: -50px;
-  }
+.so-4 {
+  left: 247px;
+  top: 413px;
+  z-index: -4;
 }
-.chart-box {
-  border-bottom: 1px solid #dedcdc;
-  padding: 30px 0;
-  position: relative;
-  .user-image2 {
-    position: absolute;
-    left: 20px;
-    top: 30px;
-  }
-  .chart-conn {
-    padding-left: 140px;
-    padding-right: 80px;
-    p {
-      font-size: 30px;
-      line-height: 42px;
-      color: #3a3b3b;
-      margin: 5px 0;
-      margin-bottom: 15px;
-    }
-    h2 {
-      font-size: 38px;
-      line-height: 40px;
-      color: #4f6aa2;
-      font-family: "Microsoft YaHei";
-      margin-bottom: 15px;
-    }
-    img {
-      display: block;
-    }
-  }
+.so-5 {
+  left: 0px;
+  top: 1147px;
+  z-index: -5;
 }
-.time-box {
-  font-size: 28px;
-  line-height: 60px;
-  color: #3a3b3b;
-  margin-top: 10px;
-  .fr {
-    color: #adaaaa;
-    font-size: 40px;
-  }
-  .active {
-    color: red;
-  }
+.so-6 {
+  left: 0px;
+  top: 0px;
+  z-index: -6;
 }
-.conn-text {
-  margin: 30px 0;
+.so-7 {
+  left: 0px;
+  top: 862px;
+  z-index: -7;
+}
+.so-8 {
+  left: 0px;
+  top: 0px;
+  z-index: -8;
 }
 </style>

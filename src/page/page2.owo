@@ -1,0 +1,103 @@
+<template lang="pug">
+.page2
+  .top-bar 22:33
+  img.icon-list-1(src="@|icon-list.png|")
+  img.icon-list-2(src="@|icon-list-2.png|")
+  img.icon-list-3(src="@|icon-list-3.png|" go="page3//scaleDown/moveFromBottom/true/scaleDown/moveFromTop")
+  img.ind(src="@|index.png|" o-animation="shrink")
+  img.newmessage(src="@|newmessage.png|" go="page3//scaleDown/moveFromBottom/true/scaleDown/moveFromTop")
+  //- 遮蔽罩
+  .blinker
+    .guide.handbottom(o-animation="floatUpDown")
+      img(src="@|hand2.png|")
+      .text 点击查看消息
+</template>
+<script>
+module.exports = {
+  created: function () {
+    setTimeout(() => {
+      this.query('.icon-list-2').style.bottom = -2 * autoScaleInfo.hideHeight + 50 + 'px'
+      this.query('.icon-list-3').style.bottom = -2 * autoScaleInfo.hideHeight + 50 + 'px'
+      this.query('.ind').style.bottom = -2 * autoScaleInfo.hideHeight + 50 + 70 + 'px'
+    }, 300);
+  },
+  show: function () {
+    setTimeout(() => {
+      this.query('.newmessage').style.top = '20px'
+      setTimeout(() => {
+        this.query('.ind').style.opacity = 1
+        this.query('.blinker').style.opacity = 1
+      }, 1000);
+    }, 2000);
+    
+  }
+}
+</script>
+<style lang="less">
+.page2 {
+  background-image: url('@|bg2.jpg|');
+}
+.icon-list-1 {
+  display: block;
+  margin: 30px auto;
+}
+.icon-list-2, .icon-list-3 {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 300px;
+  margin: 0 auto;
+}
+.icon-list-3 {
+  z-index: 100;
+}
+.ind {
+  position: absolute;
+  bottom: 297px;
+  left: 80px;
+  right: 0;
+  margin: auto;
+  user-select: none;
+  pointer-events: none;
+  z-index: 100;
+  opacity: 0;
+}
+.newmessage {
+  position: absolute;
+  left: 10px;
+  right: 0;
+  top: -140px;
+  transition: top 1s;
+  z-index: 100;
+}
+.blinker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 99;
+  left: 0;
+  top: 0;
+  transition: opacity 1s;
+  opacity: 0;
+  .guide {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    top: 240px;
+  }
+  .text {
+    color: white;
+    line-height: 80px;
+    font-size: 34px;
+    text-align: center;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+  }
+}
+</style>

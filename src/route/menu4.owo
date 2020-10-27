@@ -1,0 +1,54 @@
+<template lang="pug">
+.menu-3
+  .top-bar-me
+    img.left(src="@|zg.png|")
+    .right
+      span 中国
+      p 微信号: zhongguo
+  .message 疫情暴发以来，中国发起了历史上规模最大的一次全球紧急人道行动。截至5月底，中国已向将近150个国家和4个国际组织提供了紧急援助，以解各方的燃眉之急；为170多个国家举办了卫生专家专题视频会议，毫无保留地分享成熟的诊疗经验和防控方案；向24个有紧急需求的国家派遣了26支医疗专家组，面对面地开展交流和指导；在保证质量的前提下，开足马力为全球生产紧缺的医疗物资和设备，仅口罩和防护服就分别向世界出口了568亿只和2.5亿件。
+
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+.menu-3 {
+  background-color: #ededed;
+}
+.top-bar-me {
+  background-color: white;
+  display: flex;
+  padding: 2% 8%;
+}
+.right {
+  padding-left: 20px;
+  span {
+    line-height: 60px;
+    font-size: 36px;
+    font-weight: bold;
+    display: block;
+  }
+  p {
+    line-height: 36px;
+    font-size: 28px;
+    color: #b4afaf;
+    font-weight: bold;
+  }
+}
+.message {
+  background-color: white;
+  font-size: 36px;
+  line-height: 70px;
+  text-indent: 2em;
+  padding: 2% 4%;
+  margin-top: 40px;
+  height: calc(100% - 200px);
+}
+</style>

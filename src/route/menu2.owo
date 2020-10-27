@@ -1,0 +1,53 @@
+<template lang="pug">
+.menu-2
+  ul
+    li
+      img(src="@|bjst.png|")
+      span 巴基斯坦
+    li
+      img(src="@|dg.png|")
+      span 德国
+    li
+      img(src="@|om.png|")
+      span 欧盟
+    li
+      img(src="@|lhg.png|")
+      span 联合国
+    li
+      img(src="@|yg.png|")
+      span 英国
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+
+    }
+  }
+</script>
+
+
+<style lang="less">
+ul {
+  padding: 30px;
+  height: calc(100% - 60px);
+  overflow: auto;
+  li {
+    display: flex;
+    line-height: 90px;
+    margin-bottom: 50px;
+  }
+  img {
+    width: 90px;
+    height: 90px;
+    display: block;
+  }
+  span {
+    font-size: 38px;
+    margin-left: 20px;
+    font-weight: bold;
+    border-bottom: 1px solid #bfbfbf;
+    width: 560px;
+  }
+}
+</style>
