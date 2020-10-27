@@ -135,6 +135,16 @@
 			"type": "page"
 		},
 		{
+			"name": "friend",
+			"src": "/src/page/friend.owo",
+			"type": "page"
+		},
+		{
+			"name": "file",
+			"src": "/src/page/file.owo",
+			"type": "page"
+		},
+		{
 			"name": "topBar",
 			"src": "./src/page/topBar.owo",
 			"type": "block"

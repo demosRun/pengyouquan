@@ -1,11 +1,16 @@
 <template lang="pug">
 .menu-3
   .top-bar-me
-    img.left(src="@|zg.png|")
+    img.left(src="@|user-image.png|")
     .right
-      span 中国
-      p 微信号: zhongguo
-  .message 疫情暴发以来，中国发起了历史上规模最大的一次全球紧急人道行动。截至5月底，中国已向将近150个国家和4个国际组织提供了紧急援助，以解各方的燃眉之急；为170多个国家举办了卫生专家专题视频会议，毫无保留地分享成熟的诊疗经验和防控方案；向24个有紧急需求的国家派遣了26支医疗专家组，面对面地开展交流和指导；在保证质量的前提下，开足马力为全球生产紧缺的医疗物资和设备，仅口罩和防护服就分别向世界出口了568亿只和2.5亿件。
+      span 佰鸾xi
+      p 微信号: bailuan001
+  .message
+    p 大凉山自古以来就是通往中国西南边陲的重要通道，是古代“南方丝绸之路”的必经之地。远在两千多年前的秦汉时期，中央王朝就在这里设置郡县进行管理。
+    p 历史上许多著名人物如西汉司马迁、蜀汉诸葛亮、元世祖忽必烈、著名旅行家徐霞客、等都曾有凉山游历、活动的记载。
+    p 1935年，中国工农红军长征北上时，在会理举行了永垂青史的会理会议，并在冕宁与当地彝族首领歃血为盟。
+       
+
 
 </template>
 
@@ -25,18 +30,18 @@
 .top-bar-me {
   background-color: white;
   display: flex;
-  padding: 2% 8%;
+  padding: 3% 8%;
 }
 .right {
   padding-left: 20px;
   span {
     line-height: 60px;
-    font-size: 36px;
+    font-size: 40px;
     font-weight: bold;
     display: block;
   }
   p {
-    line-height: 36px;
+    line-height: 54px;
     font-size: 28px;
     color: #b4afaf;
     font-weight: bold;
@@ -49,6 +54,5 @@
   text-indent: 2em;
   padding: 2% 4%;
   margin-top: 40px;
-  height: calc(100% - 200px);
 }
 </style>

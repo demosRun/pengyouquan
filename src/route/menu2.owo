@@ -1,6 +1,6 @@
 <template lang="pug">
 .menu-2
-  .friend-bar(go="/view-content=friend/scaleDown/scaleUpDown/true/scaleDown/scaleUp")
+  .friend-bar(go="friend//scaleDown/scaleUpDown/true/scaleDown/scaleUp")
     img.touch-bar(src="@|tongxunlu-1.png|")
     img.notice(src="@|notice.png|" o-animation="shrink")
   .h111

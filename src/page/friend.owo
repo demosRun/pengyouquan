@@ -12,10 +12,10 @@
     add: function () {
       this.$target.style.backgroundImage = 'url(@|yitianjia.png|)'
       this.$target.removeAttribute('o-animation')
-      document.querySelector('.page-3 .blinker').style.display = 'none'
-      document.querySelector('.page-3 .notice').style.display = 'none'
+      document.querySelector('.menu-2 .blinker').style.display = 'none'
+      document.querySelector('.menu-2 .notice').style.display = 'none'
       setTimeout(() => {
-        owo.go("/view-content=menu2/scaleDown/scaleUp/true/scaleDown/scaleUpDown")
+        owo.go("page3/view-content=menu2/scaleDown/scaleUp/true/scaleDown/scaleUpDown")
       }, 1000);
     }
   }
@@ -23,6 +23,9 @@
 
 
 <style lang="less">
+.friend {
+  margin-top: 30px;
+}
 .friend-add {
   margin: 0 auto;
   display: block;

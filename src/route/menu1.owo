@@ -1,7 +1,8 @@
 <template lang="pug">
 .menu-1
-  .china-box(o-tap="goPage3")
+  .china-box(go="file//scaleDown/scaleUpDown/true")
     img.china-message(src="@|china-mess.png|")
+    img.notice(src="@|notice.png|" o-animation="shrink")
   img.xiaoxi(src="@|xiaoxi.png|")
   //- //- 遮蔽罩
   //- .blinker
@@ -14,13 +15,10 @@
 <script>
   module.exports = {
     created: function () {
-      this.query('.guide').style.bottom = -autoScaleInfo.hideHeight + 180  + 'px'
-      setTimeout(() => {
-        this.query('.blinker').style.opacity = 1
-      }, 1000);
-    },
-    goPage3: function () {
-      owo.go('page3//scaleDown/scaleUpDown/true')
+      // this.query('.guide').style.bottom = -autoScaleInfo.hideHeight + 180  + 'px'
+      // setTimeout(() => {
+      //   this.query('.blinker').style.opacity = 1
+      // }, 1000);
     }
   }
 </script>
@@ -29,13 +27,20 @@
 <style lang="less">
 .china-box {
   background-color: #f7f7f7;
-  padding-bottom: 25px;
-  padding-top: 20px;
   position: absolute;
   left: 0;
   right: 0;
   margin: auto;
   transform: translate3d(0, 0, 0);
+  height: 150px;
+}
+.china-message {
+  position: absolute;
+  left: -22px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
 }
 .blinker {
   position: absolute;
@@ -66,5 +71,10 @@
     display: block;
     margin: 0 auto;
   }
+}
+.notice {
+  position: absolute;
+  left: 110px;
+  top: 12px;
 }
 </style>
