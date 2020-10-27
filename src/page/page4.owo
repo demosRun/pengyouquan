@@ -1,6 +1,5 @@
 <template lang="pug">
 .page-4
-  .top-bar 22:33
   .scroll-box
     .top-image-box
       img.top-image(src="@|top-image.png|")

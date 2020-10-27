@@ -80,7 +80,7 @@
 		{
 			"name": "autoScale",
 			"afterbody": true,
-			"src": "https://cunchu.site/owo/plug/autoScale.js"
+			"src": "./owo_modules/autoScale.js"
 		},
 		{
 			"name": "main",
@@ -133,6 +133,11 @@
 			"name": "page4",
 			"src": "/src/page/page4.owo",
 			"type": "page"
+		},
+		{
+			"name": "topBar",
+			"src": "./src/page/topBar.owo",
+			"type": "block"
 		}
 	],
 	"mode": {

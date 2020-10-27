@@ -14,6 +14,14 @@ setTimeout(() => {
     center: 'top',
     scroll: false,
     type: 'scale',
-    box: '.scale-box'
+    box: '.scale-box',
+    callBack: function (info) {
+      var topValue = 30 / info.scale + 'px'
+      document.querySelector('.page2').style.paddingTop = topValue
+      document.querySelector('.page-3').style.paddingTop = topValue
+      // 第三页
+      document.querySelector('.bottom-bar').style.bottom = -2 * autoScaleInfo.hideHeight + 0 + 'px'
+      document.querySelector('.message-box').style.height = autoScaleInfo.showHeight + 'px'
+    }
   })
 }, 100);

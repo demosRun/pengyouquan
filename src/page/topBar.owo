@@ -1,0 +1,37 @@
+<template lang="pug">
+.top-bar 12:10
+  
+</template>
+
+<script>
+  module.exports = {
+    created: function () {
+      var myDate = new Date();
+      let mini = myDate.getMinutes()
+      if (mini < 10) mini = '0' + mini
+      this.$el.innerText = `${myDate.getHours() + 1}:${mini}`
+    }
+  }
+</script>
+
+
+<style lang="less">
+.top-bar {
+  background-image: url('@|top-bar.png|');
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  line-height: 33px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  color: #484948;
+  background-size: 92% auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ededed;
+  // opacity: 0;
+}
+</style>

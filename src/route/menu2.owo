@@ -1,53 +1,83 @@
 <template lang="pug">
 .menu-2
-  ul
-    li
-      img(src="@|bjst.png|")
-      span 巴基斯坦
-    li
-      img(src="@|dg.png|")
-      span 德国
-    li
-      img(src="@|om.png|")
-      span 欧盟
-    li
-      img(src="@|lhg.png|")
-      span 联合国
-    li
-      img(src="@|yg.png|")
-      span 英国
+  .friend-bar(go="/view-content=friend/scaleDown/scaleUpDown/true/scaleDown/scaleUp")
+    img.touch-bar(src="@|tongxunlu-1.png|")
+    img.notice(src="@|notice.png|" o-animation="shrink")
+  .h111
+  img(src="@|tongxunlu.png|")
+  
+  //- 遮蔽罩
+  .blinker
+    .guide.handbottom(o-animation="floatUpDown")
+      img(src="@|hand2.png|")
+      .text 点击查看消息
 </template>
 
 <script>
   module.exports = {
     created: function () {
-
+      setTimeout(() => {
+        this.query('.blinker').style.opacity = 1
+      }, 1000);
     }
   }
 </script>
 
 
 <style lang="less">
-ul {
-  padding: 30px;
-  height: calc(100% - 60px);
-  overflow: auto;
-  li {
-    display: flex;
-    line-height: 90px;
-    margin-bottom: 50px;
+img {
+  display: block;
+  margin: 0px auto;
+}
+.notice {
+  position: absolute;
+  left: 115px;
+  top: 15px;
+}
+.blinker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  left: 0;
+  top: 0;
+  transition: opacity 1s;
+  opacity: 0;
+  
+  .guide {
+    position: absolute;
+    left: -205px;
+    right: 0;
+    margin: auto;
+    width: 300px;
+    height: 200px;
+    top: 220px;
+  }
+  .text {
+    color: white;
+    line-height: 80px;
+    font-size: 34px;
+    text-align: center;
   }
   img {
-    width: 90px;
-    height: 90px;
     display: block;
+    margin: 0 auto;
   }
-  span {
-    font-size: 38px;
-    margin-left: 20px;
-    font-weight: bold;
-    border-bottom: 1px solid #bfbfbf;
-    width: 560px;
-  }
+}
+.touch-bar {
+  
+}
+.h111 {
+  height: 141px;
+}
+.friend-bar {
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 </style>

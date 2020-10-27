@@ -3,11 +3,11 @@
   .china-box(o-tap="goPage3")
     img.china-message(src="@|china-mess.png|")
   img.xiaoxi(src="@|xiaoxi.png|")
-  //- 遮蔽罩
-  .blinker
-    .guide.handbottom
-      .text 点击查看消息
-      img(src="@|hand.png|")
+  //- //- 遮蔽罩
+  //- .blinker
+  //-   .guide.handbottom
+  //-     .text 点击查看消息
+  //-     img(src="@|hand.png|")
       
 </template>
 

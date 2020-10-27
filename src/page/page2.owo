@@ -1,11 +1,10 @@
 <template lang="pug">
 .page2
-  .top-bar 22:33
   img.icon-list-1(src="@|icon-list.png|")
   img.icon-list-2(src="@|icon-list-2.png|")
-  img.icon-list-3(src="@|icon-list-3.png|" go="page3//scaleDown/moveFromBottom/true/scaleDown/moveFromTop")
+  img.icon-list-3(src="@|icon-list-3.png|" go="page3/view-content=menu2/scaleDown/moveFromBottom/true/scaleDown/moveFromTop")
   img.ind(src="@|index.png|" o-animation="shrink")
-  img.newmessage(src="@|newmessage.png|" go="page3//scaleDown/moveFromBottom/true/scaleDown/moveFromTop")
+  img.newmessage(src="@|newmessage.png|" go="page3/view-content=menu2/scaleDown/moveFromBottom/true/scaleDown/moveFromTop")
   //- 遮蔽罩
   .blinker
     .guide.handbottom(o-animation="floatUpDown")
@@ -15,15 +14,16 @@
 <script>
 module.exports = {
   created: function () {
+    document.querySelector('.top-bar').style.opacity = 1
     setTimeout(() => {
-      this.query('.icon-list-2').style.bottom = -2 * autoScaleInfo.hideHeight + 50 + 'px'
-      this.query('.icon-list-3').style.bottom = -2 * autoScaleInfo.hideHeight + 50 + 'px'
-      this.query('.ind').style.bottom = -2 * autoScaleInfo.hideHeight + 50 + 70 + 'px'
+      this.query('.icon-list-2').style.bottom = -2 * autoScaleInfo.hideHeight + 80 + 'px'
+      this.query('.icon-list-3').style.bottom = -2 * autoScaleInfo.hideHeight + 80 + 'px'
+      this.query('.ind').style.bottom = -2 * autoScaleInfo.hideHeight + 80 + 70 + 'px'
     }, 300);
   },
   show: function () {
     setTimeout(() => {
-      this.query('.newmessage').style.top = '20px'
+      this.query('.newmessage').style.top = '100px'
       setTimeout(() => {
         this.query('.ind').style.opacity = 1
         this.query('.blinker').style.opacity = 1
@@ -39,7 +39,8 @@ module.exports = {
 }
 .icon-list-1 {
   display: block;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 .icon-list-2, .icon-list-3 {
   position: absolute;
@@ -87,7 +88,7 @@ module.exports = {
     margin: auto;
     width: 300px;
     height: 200px;
-    top: 240px;
+    top: 340px;
   }
   .text {
     color: white;

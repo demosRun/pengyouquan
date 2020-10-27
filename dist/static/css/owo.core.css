@@ -211,7 +211,8 @@ li {
 
 .page2 .icon-list-1 {
   display: block;
-  margin: 30px auto;
+  margin: 0 auto;
+  margin-top: 30px;
 }
 
 .page2 .icon-list-2,
@@ -270,7 +271,7 @@ li {
   margin: auto;
   width: 300px;
   height: 200px;
-  top: 240px;
+  top: 340px;
 }
 
 .page2 .blinker .text {
@@ -327,30 +328,63 @@ li {
   display: block;
   margin: 0 auto;
 }
-.menu-2 ul {
-  padding: 30px;
-  height: calc(100% - 60px);
-  overflow: auto;
-}
-
-.menu-2 ul li {
-  display: flex;
-  line-height: 90px;
-  margin-bottom: 50px;
-}
-
-.menu-2 ul img {
-  width: 90px;
-  height: 90px;
+.menu-2 img {
   display: block;
+  margin: 0px auto;
 }
 
-.menu-2 ul span {
-  font-size: 38px;
-  margin-left: 20px;
-  font-weight: bold;
-  border-bottom: 1px solid #bfbfbf;
-  width: 560px;
+.menu-2 .notice {
+  position: absolute;
+  left: 115px;
+  top: 15px;
+}
+
+.menu-2 .blinker {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  left: 0;
+  top: 0;
+  transition: opacity 1s;
+  opacity: 0;
+}
+
+.menu-2 .blinker .guide {
+  position: absolute;
+  left: -205px;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  top: 220px;
+}
+
+.menu-2 .blinker .text {
+  color: white;
+  line-height: 80px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.menu-2 .blinker img {
+  display: block;
+  margin: 0 auto;
+}
+
+.menu-2 .h111 {
+  height: 141px;
+}
+
+.menu-2 .friend-bar {
+  background-color: white;
+  position: absolute;
+  z-index: 999;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  padding-top: 30px;
 }
 .menu-3 .so {
   position: absolute;
@@ -479,6 +513,22 @@ li {
   margin-top: 40px;
   height: calc(100% - 200px);
 }
+.friend .friend-add {
+  margin: 0 auto;
+  display: block;
+  padding-top: 30px;
+}
+
+.friend .add-button {
+  width: 140px;
+  height: 60px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  right: 40px;
+  top: 50px;
+  background-image: url('../resource/jieshou.png');
+}
 .page-3 .page-2 {
   background-color: #ededed;
 }
@@ -500,6 +550,7 @@ li {
   position: absolute;
   width: 100%;
   display: flex;
+  background-color: #f6f6f6;
 }
 
 .page-3 .bottom-bar .bottom-bar-item {
@@ -535,14 +586,6 @@ li {
   height: 100%;
   overflow: auto;
   position: relative;
-}
-
-.page-3 .notice {
-  position: absolute;
-  left: 32%;
-  right: 0;
-  margin: auto;
-  top: -5px;
 }
 .page-4 .top-bar {
   background-color: #ededed;
@@ -726,6 +769,23 @@ li {
   min-width: 100%;
   min-height: 100%;
 }
+.top-bar {
+  background-image: url('../resource/top-bar.png');
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+  line-height: 33px;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: "Microsoft YaHei";
+  color: #484948;
+  background-size: 92% auto;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #ededed;
+}
 /* 页面切换动画 */
 .o-page-scaleDown {
 	-webkit-animation: scaleDown .7s ease both;
@@ -756,6 +816,21 @@ li {
 @keyframes moveFromBottom {
 	from { transform: translateY(100%); }
 }
+.o-page-scaleUpDown {
+	-webkit-animation: scaleUpDown .5s ease both;
+	-moz-animation: scaleUpDown .5s ease both;
+	animation: scaleUpDown .5s ease both;
+}
+
+@-webkit-keyframes scaleUpDown {
+	from { opacity: 0; -webkit-transform: scale(1.2); }
+}
+@-moz-keyframes scaleUpDown {
+	from { opacity: 0; -moz-transform: scale(1.2); }
+}
+@keyframes scaleUpDown {
+	from { opacity: 0; transform: scale(1.2); }
+}
 .o-page-moveFromTop {
 	-webkit-animation: moveFromTop .6s ease both;
 	-moz-animation: moveFromTop .6s ease both;
@@ -771,19 +846,19 @@ li {
 @keyframes moveFromTop {
 	from { transform: translateY(-100%); }
 }
-.o-page-scaleUpDown {
-	-webkit-animation: scaleUpDown .5s ease both;
-	-moz-animation: scaleUpDown .5s ease both;
-	animation: scaleUpDown .5s ease both;
+.o-page-scaleUp {
+	-webkit-animation: scaleUp .7s ease both;
+	-moz-animation: scaleUp .7s ease both;
+	animation: scaleUp .7s ease both;
 }
 
-@-webkit-keyframes scaleUpDown {
-	from { opacity: 0; -webkit-transform: scale(1.2); }
+@-webkit-keyframes scaleUp {
+	from { opacity: 0; -webkit-transform: scale(.8); }
 }
-@-moz-keyframes scaleUpDown {
-	from { opacity: 0; -moz-transform: scale(1.2); }
+@-moz-keyframes scaleUp {
+	from { opacity: 0; -moz-transform: scale(.8); }
 }
-@keyframes scaleUpDown {
-	from { opacity: 0; transform: scale(1.2); }
+@keyframes scaleUp {
+	from { opacity: 0; transform: scale(.8); }
 }
 
