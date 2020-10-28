@@ -111,29 +111,48 @@ li {
   bottom: -14%;
 }
 
-[o-animation="floatUpDown"] {
-  -webkit-animation: floatUpDown 3s linear infinite;
-  animation: floatUpDown 3s linear infinite;
+[o-animation="floatUpDownSmall"] {
+  -webkit-animation: floatUpDownSmall 3s linear infinite;
+  animation: floatUpDownSmall 3s linear infinite;
   -webkit-animation-direction: alternate;
   animation-direction: alternate;
 }
 
-@-webkit-keyframes floatUpDown {
-  0% { transform: translateY(-4vh);}
-  50% {transform: translateY(-8vh);}
-  100% {transform: translateY(-4vh);}
+@-webkit-keyframes floatUpDownSmall {
+  0% { transform: translateY(-2px);}
+  50% {transform: translateY(2px);}
+  100% {transform: translateY(-2px);}
 }
 
-@-webkit-keyframes float {
-  0% { transform: translateY(-4vh);}
-  50% {transform: translateY(-8vh);}
-  100% {transform: translateY(-4vh);}
+@keyframes floatUpDownSmall {
+  0% { transform: translateY(-2px);}
+  50% {transform: translateY(2px);}
+  100% {transform: translateY(-2px);}
 }
 
-@keyframes float {
-  0% { transform: translateY(-4vh);}
-  50% {transform: translateY(-8vh);}
-  100% {transform: translateY(-4vh);}
+@-webkit-keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 70%;
+  }
+}
+
+@keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 70%;
+  }
+}
+
+[o-animation="flickerSmall"] {
+  -webkit-animation: flickerSmall 4s linear 0s infinite alternate;
+  animation: flickerSmall 4s linear 0s infinite alternate;
 }
 
 .page-1 {
@@ -195,6 +214,14 @@ li {
   top: 0px;
   z-index: -8;
 }
+
+.page-1 .button {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  font-size: 40px;
+  line-height: 80px;
+}
 [o-animation="shrink"] {
   -webkit-animation: shrink 1s linear alternate infinite;
   animation: shrink 1s linear alternate infinite;
@@ -206,6 +233,32 @@ li {
 @keyframes shrink{
   0%{transform:scale(0.9);}
   100%{transform:scale(1);}
+}
+
+
+[o-animation="floatUpDown"] {
+  -webkit-animation: floatUpDown 3s linear infinite;
+  animation: floatUpDown 3s linear infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+}
+
+@-webkit-keyframes floatUpDown {
+  0% { transform: translateY(-4vh);}
+  50% {transform: translateY(-8vh);}
+  100% {transform: translateY(-4vh);}
+}
+
+@-webkit-keyframes float {
+  0% { transform: translateY(-4vh);}
+  50% {transform: translateY(-8vh);}
+  100% {transform: translateY(-4vh);}
+}
+
+@keyframes float {
+  0% { transform: translateY(-4vh);}
+  50% {transform: translateY(-8vh);}
+  100% {transform: translateY(-4vh);}
 }
 
 .page2 {

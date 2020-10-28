@@ -5,10 +5,11 @@
     img.so.so-2(src="@|2405.png|")
     img.so.so-3(src="@|2403.png|")
     img.so.so-4(src="@|2179.png|")
-    img.so.so-5(src="@|2178.png|" o-animation="floatUpDown")
-    img.so.so-6(src="@|2177.png|" o-animation="floatUpDown")
-    img.so.so-7(src="@|2175.png|")
+    img.so.so-5(src="@|2178.png|" o-animation="floatUpDownSmall")
+    img.so.so-6(src="@|2177.png|" o-animation="floatUpDownSmall")
+    img.so.so-7(src="@|2175.png|" o-animation="flickerSmall")
     img.so.so-8(src="@|2404.jpg|")
+    .button(go="page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop") 进入
 </template>
 
 <script>
@@ -77,5 +78,12 @@
   left: 0px;
   top: 0px;
   z-index: -8;
+}
+.button {
+  position: absolute;
+  right: 100px;
+  top: 100px;
+  font-size: 40px;
+  line-height: 80px;
 }
 </style>

@@ -33,7 +33,7 @@
     <!-- 页面[loading]-->
     <div class="loading-box page" template="loading" style="display: none;"><img class="loading" src="./static/resource/loading-item.png"><div class="loading-bar"><div class="num-bar"></div></div><span class="text">Loading</span><div class="num">0%</div></div>
     <!-- 页面[page1]-->
-    <div class="page-1 page" template="page1" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/2406.png"><img class="so so-2" src="./static/resource/2405.png"><img class="so so-3" src="./static/resource/2403.png"><img class="so so-4" src="./static/resource/2179.png"><img class="so so-5" src="./static/resource/2178.png" o-animation="floatUpDown"><img class="so so-6" src="./static/resource/2177.png" o-animation="floatUpDown"><img class="so so-7" src="./static/resource/2175.png"><img class="so so-8" src="./static/resource/2404.jpg"></div></div>
+    <div class="page-1 page" template="page1" style="display: none;"><div class="so so-0"><img class="so so-1" src="./static/resource/2406.png"><img class="so so-2" src="./static/resource/2405.png"><img class="so so-3" src="./static/resource/2403.png"><img class="so so-4" src="./static/resource/2179.png"><img class="so so-5" src="./static/resource/2178.png" o-animation="floatUpDownSmall"><img class="so so-6" src="./static/resource/2177.png" o-animation="floatUpDownSmall"><img class="so so-7" src="./static/resource/2175.png" o-animation="flickerSmall"><img class="so so-8" src="./static/resource/2404.jpg"><div class="button" go="page2//rotatePushLeft/moveFromRight&amp;&amp;ontop/true/rotatePushRight/moveFromLeft&amp;&amp;ontop">进入</div></div></div>
     <!-- 页面[page2]-->
     <div class="page2 auto-scroll-box page" template="page2" style="display: none;"><img class="icon-list-1" src="./static/resource/icon-list.png"><img class="icon-list-2" src="./static/resource/icon-list-2.png"><img class="icon-list-3" src="./static/resource/icon-list-3.png" go="page3/view-content=menu2/rotatePushLeft/moveFromRight&amp;&amp;ontop/true/rotatePushRight/moveFromLeft&amp;&amp;ontop"><img class="ind" src="./static/resource/index.png" o-animation="shrink"><img class="newmessage" src="./static/resource/newmessage.png" go="page3/view-content=menu2/rotatePushLeft/moveFromRight&amp;&amp;ontop/true/rotatePushRight/moveFromLeft&amp;&amp;ontop"><div class="blinker"><div class="guide handbottom" o-animation="floatUpDown"><img src="./static/resource/hand2.png"><div class="text">点击查看消息</div></div></div></div>
     <!-- 页面[page3]-->
@@ -119,6 +119,7 @@ owo.script = {
       var _this2 = this;
 
       setTimeout(function () {
+        new Audio("./static/resource/message.mp3").play();
         _this2.query('.newmessage').style.top = '100px';
         setTimeout(function () {
           _this2.query('.ind').style.opacity = 1;

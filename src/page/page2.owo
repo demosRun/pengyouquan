@@ -18,6 +18,7 @@ module.exports = {
   },
   show: function () {
     setTimeout(() => {
+      new Audio("@|message.mp3|").play()
       this.query('.newmessage').style.top = '100px'
       setTimeout(() => {
         this.query('.ind').style.opacity = 1
