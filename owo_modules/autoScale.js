@@ -1,6 +1,7 @@
 autoScaleInfo = {}
 
 function getScale () {
+  console.log('计算屏幕缩放比例!')
   setTimeout(function () {
     document.body.style.opacity = 1
   }, 0);

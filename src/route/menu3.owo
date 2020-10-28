@@ -1,15 +1,343 @@
 <template lang="pug">
 .menu-3
-
+  .scroll-box
+    .top-image-box
+      img.top-image(src="@|top-image.png|")
+      .name 佰鸾xi
+      img.user-image(src="@|user-image.png|")
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-1.png|")
+        img(src="@|test-1.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-2.png|")
+        .video-box
+          //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          .cover(o-tap="playVideo")
+            img(src="@|play-video.png|")
+          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+        .local(style="background-image:url('@|local.png|')")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-3.png|")
+        .image-more.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img1.png|" data-caption="" data-id="1" data-group="0")
+              img(src="@|img1.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img2.png|" data-caption="" data-id="2" data-group="0")
+              img(src="@|img2.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img3.png|" data-caption="" data-id="3" data-group="0")
+              img(src="@|img3.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img4.png|" data-caption="" data-id="4" data-group="0")
+              img(src="@|img4.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-4.png|")
+        .image-more.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img5.png|" data-caption="" data-id="1" data-group="1")
+              img(src="@|img5.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img6.png|" data-caption="" data-id="2" data-group="1")
+              img(src="@|img6.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-5.png|")
+        .video-box
+          //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          .cover(o-tap="playVideo")
+            img(src="@|play-video.png|")
+          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+        .local(style="background-image:url('@|local2.png|')")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-6.png|")
+        .image-more.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img7.png|" data-caption="" data-id="1" data-group="2")
+              img(src="@|img7.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img8.png|" data-caption="" data-id="2" data-group="2")
+              img(src="@|img8.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-7.png|")
+        img(src="@|link.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-8.png|")
+        img(src="@|img9.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+        img(src="@|img10.png|")
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 农民夜校
+        img.conn-text(src="@|text-9.png|")
+        img(src="@|link2.png|")
+        //- 广告条
+        img.float-ad(src="@|adfloat.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-10.png|")
+        .image-more.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img11.png|" data-caption="" data-id="1" data-group="3")
+              img(src="@|img11.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img12.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img12.png|")
+        .local(style="background-image:url('@|local3.png|')")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-11.png|")
+        .video-box
+          //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          .cover(o-tap="playVideo")
+            img(src="@|play-video.png|")
+          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
 </template>
+
 
 <script>
   module.exports = {
-
+    created: function () {
+      this.queryAll('.time-box .icon').forEach(element => {
+        console.log(element)
+        owo.tool.heart(element, (e) => {
+          element.classList.add('active')
+        })
+      });
+      console.log(autoScaleInfo.showHeight)
+      setTimeout(function() {
+        new SmartPhoto(".smartphoto");
+      }, 0);
+    },
+    fabulous: function () {
+      
+    },
+    playVideo: function () {
+      console.log(this)
+      this.$target.style.display = 'none'
+      let parentElement = this.$target.parentNode || this.$target.parentElement
+      if (parentElement.querySelector('video')) {
+        parentElement.querySelector('video').play()
+      }
+      
+    }
   }
 </script>
 
 
 <style lang="less">
-
+.top-bar {
+  background-color: #ededed;
+}
+.scroll-box {
+  height: 100%;
+  overflow: auto;
+}
+.page-1 {
+  background-color: white;
+}
+.top-image {
+  width: 100%;
+  display: block;
+}
+.top-image-box {
+  position: relative;
+  .name {
+    position: absolute;
+    right: 188px;
+    font-size: 32px;
+    color: white;
+    font-weight: bold;
+    bottom: 16px;
+  }
+  .user-image {
+    position: absolute;
+    right: 40px;
+    bottom: -50px;
+  }
+}
+.chart-box {
+  border-bottom: 1px solid #dedcdc;
+  padding: 30px 0;
+  position: relative;
+  .user-image2 {
+    position: absolute;
+    left: 20px;
+    top: 30px;
+  }
+  .chart-conn {
+    padding-left: 140px;
+    padding-right: 80px;
+    p {
+      font-size: 30px;
+      line-height: 42px;
+      color: #3a3b3b;
+      margin: 5px 0;
+      margin-bottom: 15px;
+    }
+    h2 {
+      font-size: 38px;
+      line-height: 40px;
+      color: #4f6aa2;
+      font-family: "Microsoft YaHei";
+      margin-bottom: 15px;
+    }
+    img {
+      display: block;
+    }
+    .local {
+      height: 40px;
+      background-repeat: no-repeat;
+      background-position: center left;
+      margin-top: 20px;
+    }
+  }
+}
+.time-box {
+  font-size: 28px;
+  line-height: 60px;
+  color: #3a3b3b;
+  margin-top: 10px;
+  .fr {
+    color: #adaaaa;
+    font-size: 40px;
+  }
+  .active {
+    color: red;
+  }
+}
+.conn-text {
+  margin: 30px 0;
+}
+.video-box {
+  width: 417px;
+  height: 276px;
+  overflow: hidden;
+  position: relative;
+  video {
+    width: 100%;
+    height: 100%;
+    background-color: black;
+  }
+  .show-image {
+    position: absolute;
+    left: -50%;
+    right: -50%;
+    top: -50%;
+    bottom: -50%;
+    margin: auto;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  .cover {
+    background-color: rgba(0, 0, 0, 0.4);
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    img {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      user-select: none;
+      pointer-events: none;
+    }
+  }
+}
+.image-more {
+  .image-more-item {
+    width: 255px;
+    margin-right: 10px;
+    overflow: hidden;
+    height: 164px;
+    margin-top: 10px;
+    position: relative;
+    img {
+      position: absolute;
+      left: -50%;
+      right: -50%;
+      top: -50%;
+      bottom: -50%;
+      margin: auto;
+    }
+  }
+}
+.float-ad {
+  position: absolute;
+  right: 60px;
+  top: 45px;
+}
+.smartphoto {
+  display: block;
+  position: relative;
+  img {
+    min-width: 100%;
+    min-height: 100%;
+  }
+}
 </style>

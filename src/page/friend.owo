@@ -1,5 +1,5 @@
 <template lang="pug">
-.friend
+.friend.auto-scroll-box
   img.friend-add(src="@|newFriend.png|")
   .add-button(o-animation="shrink" o-tap="add")
 </template>
@@ -24,7 +24,6 @@
 
 <style lang="less">
 .friend {
-  margin-top: 30px;
 }
 .friend-add {
   margin: 0 auto;
@@ -38,7 +37,7 @@
   background-position: center center;
   position: absolute;
   right: 40px;
-  top: 50px;
+  top: 100px;
   background-image: url('@|jieshou.png|');
 }
 </style>

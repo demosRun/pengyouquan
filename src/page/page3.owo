@@ -1,5 +1,5 @@
 <template lang="pug">
-.page-3
+.page-3.auto-scroll-box
   view.message-box(name="content")
     .router-item(route="menu1" src="./src/route/menu1.owo")
     .router-item(route="menu2" src="./src/route/menu2.owo")
@@ -54,6 +54,7 @@
   right: 0;
   margin: auto;
   background-color: white;
+  height: calc(100% - 180px);
 }
 .xiaoxi {
   margin: 0 auto;
@@ -65,8 +66,13 @@
   width: 100%;
   display: flex;
   background-color: #f6f6f6;
+  bottom: 0;
+  border-top: 1px solid #ccc;
+  box-sizing: border-box;
   .bottom-bar-item {
     width: 25%;
+    height: 110px;
+    padding-top: 10px;
   }
   .ico {
     display: block;
@@ -79,7 +85,7 @@
     font-size: 28px;
     text-align: center;
     font-weight: bold;
-    line-height: 60px;
+    line-height: 45px;
   }
 }
 .active {

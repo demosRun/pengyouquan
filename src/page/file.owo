@@ -1,14 +1,14 @@
 <template lang="pug">
-.file
+.file.auto-scroll-box
   .title-bar
     span 佰鸾xi
-    img.back-button(src="@|back.png|" go="page3/view-content=menu1/scaleDown/scaleUpDown/true/scaleDown/scaleUpDown")
+    img.back-button(src="@|back.png|" go="page3/view-content=menu1/rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop/scaleDown/scaleUpDown")
   .conn-box
     img(src="@|time.png|" style=" position: absolute; left: 0; right: 0; margin: auto; top: 105px; ")
-    img.message-item(src="@|message.png|" go="page4//scaleDown/scaleUpDown/true/scaleDown/scaleUpDown")
+    img.message-item(src="@|message.png|" go="page4//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop/scaleDown/scaleUpDown")
   //- 遮蔽罩
   .blinker
-    .guide.handbottom
+    .guide.handbottom(o-animation="floatUpDown")
       img(src="@|hand.png|")
       .text 点击查看消息
 </template>
@@ -35,7 +35,6 @@
 <style lang="less">
 .file {
   background-color: #ededed;
-  margin-top: 30px;
 }
 .conn-box {
   position: absolute;
@@ -87,7 +86,7 @@
     margin: auto;
     width: 300px;
     height: 200px;
-    top: 350px;
+    top: 450px;
   }
   .text {
     color: white;

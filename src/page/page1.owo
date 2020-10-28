@@ -5,8 +5,8 @@
     img.so.so-2(src="@|2405.png|")
     img.so.so-3(src="@|2403.png|")
     img.so.so-4(src="@|2179.png|")
-    img.so.so-5(src="@|2178.png|")
-    img.so.so-6(src="@|2177.png|")
+    img.so.so-5(src="@|2178.png|" o-animation="floatUpDown")
+    img.so.so-6(src="@|2177.png|" o-animation="floatUpDown")
     img.so.so-7(src="@|2175.png|")
     img.so.so-8(src="@|2404.jpg|")
 </template>
@@ -14,8 +14,13 @@
 <script>
   module.exports = {
     show: function () {
+      owo.animate('fadeInUp', this.query('.so-7'), 500)
+      owo.animate('fadeInUp', this.query('.so-5'), 800)
+      owo.animate('fadeInDown', this.query('.so-6'), 900)
+      owo.animate('slideInLeft', this.query('.so-1'), 1300)
+      owo.animate('flipInX', this.query('.so-2'), 2000)
       setTimeout(() => {
-        owo.go('page2//scaleDown/moveFromBottom/true/scaleDown/moveFromTop')
+        // owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
       }, 2000);
     }
   }
@@ -23,6 +28,9 @@
 
 
 <style lang="less">
+.page-1 {
+  height: 100%;
+}
 .so-0 {
   left: 0px;
   top: 0px;

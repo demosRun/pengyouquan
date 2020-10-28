@@ -1,6 +1,6 @@
 <template lang="pug">
 .menu-1
-  .china-box(go="file//scaleDown/scaleUpDown/true")
+  .china-box(go="file//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
     img.china-message(src="@|china-mess.png|")
     img.notice(src="@|notice.png|" o-animation="shrink")
   img.xiaoxi(src="@|xiaoxi.png|")
