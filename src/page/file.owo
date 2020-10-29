@@ -2,10 +2,10 @@
 .file.auto-scroll-box
   .title-bar
     span 佰鸾xi
-    img.back-button(src="@|back.png|" go="page3/view-content=menu1/rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop/scaleDown/scaleUpDown")
+    img.back-button(src="@|back.png|" go="page3/view-content=menu1/rotatePushRight/moveFromLeft&&ontop/true/scaleDown/scaleUpDown")
   .conn-box
     img(src="@|time.png|" style=" position: absolute; left: 0; right: 0; margin: auto; top: 105px; ")
-    img.message-item(src="@|message.png|" go="page4//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop/scaleDown/scaleUpDown")
+    img.message-item(src="@|message.png|" o-tap="next")
   //- 遮蔽罩
   .blinker
     .guide.handbottom(o-animation="floatUpDown")
@@ -20,13 +20,15 @@
       setTimeout(() => {
         this.query('.blinker').style.opacity = 1
       }, 1000);
-      // this.query('.guide').style.top = -autoScaleInfo.hideHeight + 430 + 'px'
-      // this.query('.title-bar').style.top = -autoScaleInfo.hideHeight + 75 + 'px'
-      // this.query('.conn-box').style.top = -autoScaleInfo.hideHeight + 155 + 'px'
-      // this.query('.conn-box').style.height = autoScaleInfo.showHeight - 155 + 'px'
+      document.querySelector('.menu-1 .notice').style.display = 'none'
     },
     show: function () {
       document.querySelector('.top-bar').classList.add('black')
+    },
+    next: function () {
+      
+      owo.go('page4//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop/scaleDown/scaleUpDown')
+      document.querySelector('.file .blinker').style.display = 'none'
     }
   }
 </script>

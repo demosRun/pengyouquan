@@ -9,7 +9,7 @@
     img.so.so-6(src="@|2177.png|" o-animation="floatUpDownSmall")
     img.so.so-7(src="@|2175.png|" o-animation="flickerSmall")
     img.so.so-8(src="@|2404.jpg|")
-    .button(go="page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop") 进入
+    //- .button(go="page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop") 进入
 </template>
 
 <script>
@@ -21,7 +21,7 @@
       owo.animate('slideInLeft', this.query('.so-1'), 1300)
       owo.animate('flipInX', this.query('.so-2'), 2000)
       setTimeout(() => {
-        // owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
+        owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
       }, 2000);
     }
   }

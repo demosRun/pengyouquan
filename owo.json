@@ -79,7 +79,6 @@
 		},
 		{
 			"name": "autoScale",
-			"afterbody": true,
 			"src": "./owo_modules/autoScale.js"
 		},
 		{
