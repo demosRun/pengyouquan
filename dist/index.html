@@ -306,7 +306,7 @@
                 </div>
               </div>
             </div>
-            <img class="share-button" src="./static/resource/share-button.png" o-animation="shrink">
+            <img class="share-button" src="./static/resource/share-button.png" o-animation="shrink" go="page5/view-content=menu2/rotatePushLeft/moveFromRight&amp;&amp;ontop/true/rotatePushRight/moveFromLeft&amp;&amp;ontop">
           </div>
         </div>
         <div class="menu-3 router-item" route="menu4">
@@ -379,6 +379,12 @@
         </div>
       </div>
     </div>
+    <!-- 页面[page5]-->
+    <div class="page5 page" template="page5" style="display: none;">
+      <img class="change" src="./static/resource/change.png" o-animation="shrink" o-tap="changeImg">
+      <img class="share-image" src="./static/resource/share-image-1.png">
+      <p>恭喜你成为第1273712打卡四川大凉山的用户，快邀请朋友一起打卡四川凉山吧，为脱贫攻坚加油！</p>
+    </div>
   </div>
   <!-- 插件[topBar]-->
   <div class="top-bar owo-block" template="topBar" style="display: none;">12:10</div>
@@ -443,6 +449,7 @@
           owo.animate('fadeInDown', this.query('.so-6'), 900);
           owo.animate('slideInLeft', this.query('.so-1'), 1300);
           owo.animate('zoomIn', this.query('.so-2'), 2000);
+          owo.animate('fadeIn', this.query('.so-4'), 3300);
           owo.animate('bounceIn', this.query('.button'), 3000); // setTimeout(() => {
           //   owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
           // }, 4000);
@@ -590,6 +597,21 @@
           var mini = myDate.getMinutes();
           if (mini < 10) mini = '0' + mini;
           this.$el.innerText = myDate.getHours() + 1 + ":" + mini;
+        }
+      },
+      "page5": {
+        "data": {
+          "imageList": ["./static/resource/share-image-1.png", "./static/resource/share-image.png"],
+          "activeIndex": 0
+        },
+        "changeImg": function changeImg() {
+          this.data.activeIndex++;
+
+          if (this.data.activeIndex > this.data.imageList.length - 1) {
+            this.data.activeIndex = 0;
+          }
+
+          this.query('.share-image').src = this.data.imageList[this.data.activeIndex];
         }
       }
     };

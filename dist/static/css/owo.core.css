@@ -868,6 +868,32 @@ li {
   background-color: #ededed;
   opacity: 0;
 }
+.page5 {
+  background-image: url('../resource/share-bg.jpg');
+}
+
+.page5 .change {
+  position: absolute;
+  right: 45px;
+  top: 240px;
+}
+
+.page5 .share-image {
+  position: absolute;
+  left: 240px;
+  margin: 0 auto;
+  top: 369px;
+}
+
+.page5 p {
+  position: absolute;
+  left: 76px;
+  top: 890px;
+  font-size: 36px;
+  line-height: 67px;
+  width: 600px;
+  color: #563717;
+}
 /* 页面切换动画 */
 .o-page-rotatePushLeft {
 	-webkit-transform-origin: 0% 50%;
@@ -1073,6 +1099,20 @@ li {
 
 .zoomIn {
   animation-name: zoomIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  animation-name: fadeIn;
 }
 
 @keyframes bounceIn {

@@ -152,7 +152,7 @@
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
-    img.share-button(src="@|share-button.png|" o-animation="shrink")
+    img.share-button(src="@|share-button.png|" o-animation="shrink" go="page5/view-content=menu2/rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
 </template>
 
 
