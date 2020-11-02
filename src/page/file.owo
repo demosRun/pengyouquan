@@ -24,6 +24,8 @@
     },
     show: function () {
       document.querySelector('.top-bar').classList.add('black')
+      // 微信红点
+      document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-1 .notice-icon').style.display = 'none'
     },
     next: function () {
       

@@ -19,7 +19,7 @@
       owo.animate('fadeInUp', this.query('.so-5'), 800)
       owo.animate('fadeInDown', this.query('.so-6'), 900)
       owo.animate('slideInLeft', this.query('.so-1'), 1300)
-      owo.animate('flipInX', this.query('.so-2'), 2000)
+      owo.animate('zoomIn', this.query('.so-2'), 2000)
       owo.animate('bounceIn', this.query('.button'), 3000)
       // setTimeout(() => {
       //   owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
