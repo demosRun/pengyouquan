@@ -1,7 +1,7 @@
 <template lang="pug">
 .file.auto-scroll-box
   .title-bar
-    span 佰鸾xi
+    span 人民网媛媛
     img.back-button(src="@|back.png|" go="page3/view-content=menu1/rotatePushRight/moveFromLeft&&ontop/true/scaleDown/scaleUpDown")
   .conn-box
     img(src="@|time.png|" style=" position: absolute; left: 0; right: 0; margin: auto; top: 105px; ")
@@ -88,7 +88,7 @@
     margin: auto;
     width: 300px;
     height: 200px;
-    top: 450px;
+    top: 650px;
   }
   .text {
     color: white;

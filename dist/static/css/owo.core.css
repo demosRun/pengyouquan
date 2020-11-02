@@ -132,6 +132,19 @@ li {
 
 
 
+[o-animation="shrink"] {
+  -webkit-animation: shrink 1s linear alternate infinite;
+  animation: shrink 1s linear alternate infinite;
+}
+@-webkit-keyframes shrink{
+  0%{-webkit-transform:scale(0.9);}
+  100%{-webkit-transform:scale(1);}
+}
+@keyframes shrink{
+  0%{transform:scale(0.9);}
+  100%{transform:scale(1);}
+}
+
 .page-1 {
   height: 100%;
 }
@@ -151,9 +164,8 @@ li {
 }
 
 .page-1 .so-2 {
-  left: 249px;
-  top: 232px;
-  z-index: -2;
+  left: 290px;
+  top: 115px;
 }
 
 .page-1 .so-3 {
@@ -194,24 +206,11 @@ li {
 
 .page-1 .button {
   position: absolute;
-  right: 100px;
-  top: 100px;
+  left: 284px;
+  top: 920px;
   font-size: 40px;
   line-height: 80px;
 }
-[o-animation="shrink"] {
-  -webkit-animation: shrink 1s linear alternate infinite;
-  animation: shrink 1s linear alternate infinite;
-}
-@-webkit-keyframes shrink{
-  0%{-webkit-transform:scale(0.9);}
-  100%{-webkit-transform:scale(1);}
-}
-@keyframes shrink{
-  0%{transform:scale(0.9);}
-  100%{transform:scale(1);}
-}
-
 
 [o-animation="floatUpDown"] {
   -webkit-animation: floatUpDown 3s linear infinite;
@@ -330,7 +329,7 @@ li {
 
 .menu-1 .china-message {
   position: absolute;
-  left: -22px;
+  left: 0px;
   right: 0;
   top: 0;
   bottom: 0;
@@ -615,6 +614,11 @@ li {
   min-width: 100%;
   min-height: 100%;
 }
+
+.menu-3 .share-button {
+  display: block;
+  margin: 25px auto;
+}
 .menu-3 {
   background-color: #ededed;
 }
@@ -684,6 +688,18 @@ li {
   width: 25%;
   height: 110px;
   padding-top: 10px;
+  position: relative;
+}
+
+.page-3 .bottom-bar .bottom-bar-item .notice-icon {
+  position: absolute;
+  right: 46px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: #dd391f;
+  display: none;
 }
 
 .page-3 .bottom-bar .ico {
@@ -819,7 +835,7 @@ li {
   margin: auto;
   width: 300px;
   height: 200px;
-  top: 450px;
+  top: 650px;
 }
 
 .file .blinker .text {
@@ -1073,5 +1089,48 @@ li {
 .flipInX {
   backface-visibility: visible !important;
   animation-name: flipInX;
+}
+
+@keyframes bounceIn {
+  from,
+  20%,
+  40%,
+  60%,
+  80%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: scale3d(0.3, 0.3, 0.3);
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(0.9, 0.9, 0.9);
+  }
+
+  60% {
+    opacity: 1;
+    transform: scale3d(1.03, 1.03, 1.03);
+  }
+
+  80% {
+    transform: scale3d(0.97, 0.97, 0.97);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+.bounceIn {
+  animation-duration: 0.75s;
+  animation-name: bounceIn;
 }
 

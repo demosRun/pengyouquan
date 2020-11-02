@@ -14,6 +14,11 @@
       this.$target.removeAttribute('o-animation')
       document.querySelector('.menu-2 .blinker').style.display = 'none'
       document.querySelector('.menu-2 .notice').style.display = 'none'
+      // 朋友圈红点
+      document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-3 .notice-icon').style.display = 'block'
+      document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-1 .notice-icon').style.display = 'block'
+      // 播放音乐
+      new Audio("@|message.mp3|").play()
       setTimeout(() => {
         owo.go("page3/view-content=menu2/scaleDown/scaleUp/true/scaleDown/scaleUpDown")
       }, 1000);
