@@ -1,0 +1,49 @@
+<template lang="pug">
+.page5
+  img.change(src="@|change.png|" o-animation="shrink" o-tap="changeImg")
+  img.share-image(src="@|share-image-1.png|")
+  p 恭喜你成为第1273712打卡四川大凉山的用户，快邀请朋友一起打卡四川凉山吧，为脱贫攻坚加油！
+</template>
+<script>
+module.exports = {
+  data: {
+    imageList: [
+      '@|share-image-1.png|',
+      '@|share-image.png|',
+    ],
+    activeIndex: 0
+  },
+  changeImg: function () {
+    this.data.activeIndex++
+    if (this.data.activeIndex > (this.data.imageList.length - 1)) {
+      this.data.activeIndex = 0
+    }
+    this.query('.share-image').src = this.data.imageList[this.data.activeIndex]
+  }
+}
+</script>
+<style lang="less">
+.page5 {
+  background-image: url('@|share-bg.jpg|');
+}
+.change {
+  position: absolute;
+  right: 45px;
+  top: 240px;
+}
+.share-image {
+  position: absolute;
+  left: 240px;
+  margin: 0 auto;
+  top: 369px;
+}
+p {
+  position: absolute;
+  left: 76px;
+  top: 890px;
+  font-size: 36px;
+  line-height: 67px;
+  width: 600px;
+  color: #563717;
+}
+</style>

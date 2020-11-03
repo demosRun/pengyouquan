@@ -14,7 +14,7 @@
 
 <script>
   module.exports = {
-    created: function () {
+    show: function () {
       // this.query('.guide').style.bottom = -autoScaleInfo.hideHeight + 180  + 'px'
       // setTimeout(() => {
       //   this.query('.blinker').style.opacity = 1
@@ -36,7 +36,7 @@
 }
 .china-message {
   position: absolute;
-  left: -22px;
+  left: 0px;
   right: 0;
   top: 0;
   bottom: 0;

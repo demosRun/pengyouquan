@@ -113,7 +113,7 @@
           .fr.icon &#xe6ec;
         img(src="@|img10.png|")
     .chart-box
-      img.user-image2(src="@|user-image-2.png|")
+      img.user-image2(src="@|user-image-3.png|")
       .chart-conn
         h2 农民夜校
         img.conn-text(src="@|text-9.png|")
@@ -152,6 +152,7 @@
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
+    img.share-button(src="@|share-button.png|" o-animation="shrink" go="page5/view-content=menu2/rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
 </template>
 
 
@@ -168,6 +169,10 @@
       setTimeout(function() {
         new SmartPhoto(".smartphoto");
       }, 0);
+    },
+    show: function () {
+      // 朋友圈红点
+      document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-3 .notice-icon').style.display = 'none'
     },
     fabulous: function () {
       
@@ -339,5 +344,9 @@
     min-width: 100%;
     min-height: 100%;
   }
+}
+.share-button {
+  display: block;
+  margin: 25px auto;
 }
 </style>

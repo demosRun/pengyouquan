@@ -79,7 +79,6 @@
 		},
 		{
 			"name": "autoScale",
-			"afterbody": true,
 			"src": "./owo_modules/autoScale.js"
 		},
 		{
@@ -148,6 +147,11 @@
 			"name": "topBar",
 			"src": "./src/page/topBar.owo",
 			"type": "block"
+		},
+		{
+			"name": "page5",
+			"src": "/src/page/page5.owo",
+			"type": "page"
 		}
 	],
 	"mode": {

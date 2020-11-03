@@ -9,7 +9,7 @@
     img.so.so-6(src="@|2177.png|" o-animation="floatUpDownSmall")
     img.so.so-7(src="@|2175.png|" o-animation="flickerSmall")
     img.so.so-8(src="@|2404.jpg|")
-    .button(go="page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop") 进入
+    img.button(src="@|start.png|" o-animation="shrink" go="page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
 </template>
 
 <script>
@@ -19,10 +19,12 @@
       owo.animate('fadeInUp', this.query('.so-5'), 800)
       owo.animate('fadeInDown', this.query('.so-6'), 900)
       owo.animate('slideInLeft', this.query('.so-1'), 1300)
-      owo.animate('flipInX', this.query('.so-2'), 2000)
-      setTimeout(() => {
-        // owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
-      }, 2000);
+      owo.animate('zoomIn', this.query('.so-2'), 2000)
+      owo.animate('fadeIn', this.query('.so-4'), 3300)
+      owo.animate('bounceIn', this.query('.button'), 3000)
+      // setTimeout(() => {
+      //   owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
+      // }, 4000);
     }
   }
 </script>
@@ -45,9 +47,8 @@
   z-index: -1;
 }
 .so-2 {
-  left: 249px;
-  top: 232px;
-  z-index: -2;
+  left: 290px;
+  top: 115px;
 }
 .so-3 {
   left: 0px;
@@ -81,8 +82,8 @@
 }
 .button {
   position: absolute;
-  right: 100px;
-  top: 100px;
+  left: 284px;
+  top: 920px;
   font-size: 40px;
   line-height: 80px;
 }
