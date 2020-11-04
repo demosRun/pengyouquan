@@ -3,6 +3,8 @@
   .china-box(go="file//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
     img.china-message(src="@|china-mess.png|")
     img.notice(src="@|notice.png|" o-animation="shrink")
+    //- 对话内容
+    .duihua
   img.xiaoxi(src="@|xiaoxi.png|")
   //- //- 遮蔽罩
   //- .blinker
@@ -15,6 +17,7 @@
 <script>
   module.exports = {
     show: function () {
+      this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！'
       // this.query('.guide').style.bottom = -autoScaleInfo.hideHeight + 180  + 'px'
       // setTimeout(() => {
       //   this.query('.blinker').style.opacity = 1
@@ -76,5 +79,13 @@
   position: absolute;
   left: 110px;
   top: 12px;
+}
+.duihua {
+  color: #b5afaf;
+  position: absolute;
+  top: 88px;
+  left: 155px;
+  font-size: 28px;
+  line-height: 30px;
 }
 </style>

@@ -6,6 +6,8 @@
   .conn-box
     img(src="@|time.png|" style=" position: absolute; left: 0; right: 0; margin: auto; top: 105px; ")
     img.message-item(src="@|message.png|" o-tap="next")
+    //- 对话内容
+    .duihua
   //- 遮蔽罩
   .blinker
     .guide.handbottom(o-animation="floatUpDown")
@@ -21,6 +23,7 @@
         this.query('.blinker').style.opacity = 1
       }, 1000);
       document.querySelector('.menu-1 .notice').style.display = 'none'
+      this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！最近，我们“大道康庄——人民网全媒体调研行”前往四川凉山进行调研采访，您去过那里吗？要不要和我一起去看一下。'
     },
     show: function () {
       document.querySelector('.top-bar').classList.add('black')
@@ -103,5 +106,17 @@
     margin: 0 auto;
     transform:rotate(180deg);
   }
+}
+.duihua {
+  position: absolute;
+  left: 226px;
+  top: 180px;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 37px;
+  width: 389px;
+  word-break: break-all;
+  text-indent: 2em;
+  color: #535151;
 }
 </style>
