@@ -1,6 +1,6 @@
 <template lang="pug">
 .menu-1
-  .china-box(go="file//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
+  .china-box(go="file//rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop")
     img.china-message(src="@|china-mess.png|")
     img.notice(src="@|notice.png|" o-animation="shrink")
     //- 对话内容

@@ -67,3 +67,24 @@ if (window.isWeiXin) {
     }
   }
 }
+
+
+// 投票
+$.ajax({		
+  type:"get",
+  voteId: 70242,
+  url: "http://littlepoll1.people.com.cn/button/index.php/cip/button/695/"+ 70242,//每一个投票对应一个type的值
+  dataType: "json",
+  data: "jsonCallback=?",   
+  cache: false,
+  success:function(data){
+    console.log(data.b);
+  }
+});
+
+var voiteaNum = 13236
+setTimeout(function () {
+  $.getJSON("http://littlepoll1.people.com.cn/json.php?type=695&callback=?", function(data) {
+    voiteaNum = data[0].bnum
+  })
+}, 2000)

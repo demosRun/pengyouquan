@@ -20,7 +20,7 @@
       // 播放音乐
       new Audio("@|message.mp3|").play()
       setTimeout(() => {
-        owo.go("page3/view-content=menu2/scaleDown/scaleUp/true/scaleDown/scaleUpDown")
+        owo.go("page3/view-content=menu2/scaleDown/scaleUp//scaleDown/scaleUpDown")
       }, 1000);
     }
   }

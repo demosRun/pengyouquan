@@ -9,7 +9,7 @@
     img.so.so-6(src="@|2177.png|" o-animation="floatUpDownSmall")
     img.so.so-7(src="@|2175.png|" o-animation="flickerSmall")
     img.so.so-8(src="@|2404.jpg|")
-    img.button(src="@|start.png|" o-animation="shrink" go="page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
+    img.button(src="@|start.png|" o-animation="shrink" go="page2//rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop")
 </template>
 
 <script>
@@ -23,7 +23,7 @@
       owo.animate('fadeIn', this.query('.so-4'), 3300)
       owo.animate('bounceIn', this.query('.button'), 3000)
       // setTimeout(() => {
-      //   owo.go('page2//rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop')
+      //   owo.go('page2//rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop')
       // }, 4000);
     }
   }

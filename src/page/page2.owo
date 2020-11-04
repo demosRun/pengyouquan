@@ -2,9 +2,9 @@
 .page2.auto-scroll-box
   img.icon-list-1(src="@|icon-list.png|")
   img.icon-list-2(src="@|icon-list-2.png|")
-  img.icon-list-3(src="@|icon-list-3.png|" go="page3/view-content=menu2/rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
+  img.icon-list-3(src="@|icon-list-3.png|" go="page3/view-content=menu2/rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop")
   img.ind(src="@|index.png|" o-animation="shrink")
-  img.newmessage(src="@|newmessage.png|" go="page3/view-content=menu2/rotatePushLeft/moveFromRight&&ontop/true/rotatePushRight/moveFromLeft&&ontop")
+  img.newmessage(src="@|newmessage.png|" go="page3/view-content=menu2/rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop")
   //- 遮蔽罩
   .blinker
     .guide.handbottom(o-animation="floatUpDown")

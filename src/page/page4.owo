@@ -2,7 +2,7 @@
 .page-4.auto-scroll-box
   .title-bar
     span 四川大凉山简介.docx
-    img.back-button(src="@|back.png|" go="file/view-content=menu1/rotatePushRight/moveFromLeft&&ontop/true/scaleDown/scaleUpDown")
+    img.back-button(src="@|back.png|" go="file/view-content=menu1/rotatePushRight/moveFromLeft&&ontop//scaleDown/scaleUpDown")
   p 中国西部山脉。在四川西南凉山彝族自治州内，是大雪山的支脉。东北-西南走向。海拔2,000∼3,500米，个别高峰近4,000米。山地西侧美姑、昭觉一带为山原，丘陵起伏，顶部浑圆平坦，林牧业发达。东南侧为金沙江谷地，河谷深切，地面破碎。大风顶一带为大熊猫分布区。已建立自然保护区。大凉山为彝族聚居地区。大凉山以东为小凉山，以北为小相岭，以西为安宁河谷地。
 </template>
 
