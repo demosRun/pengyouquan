@@ -152,6 +152,51 @@
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-12.png|")
+        img(src="@|link.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-13.png|")
+        .image-more-2.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img13.png|" data-caption="" data-id="1" data-group="3")
+              img(src="@|img13.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img14.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img14.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img15.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img15.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img16.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img16.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img17.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img17.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img18.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img18.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img19.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img19.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img20.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img20.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img21.png|" data-caption="" data-id="2" data-group="3")
+              img(src="@|img21.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
     img.share-button(src="@|share-button.png|" o-animation="shrink" go="page5/view-content=menu2/rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop")
 </template>
 
@@ -197,6 +242,7 @@
 .scroll-box {
   height: 100%;
   overflow: auto;
+  background-color: white;
 }
 .page-1 {
   background-color: white;
@@ -320,6 +366,24 @@
     margin-right: 10px;
     overflow: hidden;
     height: 164px;
+    margin-top: 10px;
+    position: relative;
+    img {
+      position: absolute;
+      left: -50%;
+      right: -50%;
+      top: -50%;
+      bottom: -50%;
+      margin: auto;
+    }
+  }
+}
+.image-more-2 {
+  .image-more-item {
+    width: 166px;
+    margin-right: 10px;
+    overflow: hidden;
+    height: 166px;
     margin-top: 10px;
     position: relative;
     img {

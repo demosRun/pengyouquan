@@ -448,6 +448,7 @@ li {
 .menu-3 .scroll-box {
   height: 100%;
   overflow: auto;
+  background-color: white;
 }
 
 .menu-3 .page-1 {
@@ -600,6 +601,24 @@ li {
 }
 
 .menu-3 .image-more .image-more-item img {
+  position: absolute;
+  left: -50%;
+  right: -50%;
+  top: -50%;
+  bottom: -50%;
+  margin: auto;
+}
+
+.menu-3 .image-more-2 .image-more-item {
+  width: 166px;
+  margin-right: 10px;
+  overflow: hidden;
+  height: 166px;
+  margin-top: 10px;
+  position: relative;
+}
+
+.menu-3 .image-more-2 .image-more-item img {
   position: absolute;
   left: -50%;
   right: -50%;
