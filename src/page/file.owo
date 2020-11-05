@@ -5,14 +5,21 @@
     img.back-button(src="@|back.png|" go="page3/view-content=menu1/rotatePushRight/moveFromLeft&&ontop//scaleDown/scaleUpDown")
   .conn-box
     img(src="@|time.png|" style=" position: absolute; left: 0; right: 0; margin: auto; top: 105px; ")
-    img.message-item(src="@|message.png|" o-tap="next")
+    .message-box.message-box-1.clear
+      img.message-item(src="@|message-1.png|" o-tap="next")
+    .message-box.message-box-2.clear
+      img.message-item.fr(src="@|message-2.png|")
+      span.duihua-2 好的～
+    .message-box.message-box-3.clear
+      img.message-item(src="@|message-3.png|")
+      span.duihua-3 那就去我的朋友圈看看吧～
     //- 对话内容
     .duihua
   //- 遮蔽罩
-  .blinker
-    .guide.handbottom(o-animation="floatUpDown")
-      img(src="@|hand.png|")
-      .text 点击查看消息
+  //- .blinker
+  //-   .guide.handbottom(o-animation="floatUpDown")
+  //-     img(src="@|hand.png|")
+  //-     .text 点击查看消息
 </template>
 
 <script>
@@ -24,6 +31,8 @@
       // }, 1000);
       document.querySelector('.menu-1 .notice').style.display = 'none'
       this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！最近，我们“大道康庄——人民网全媒体调研行”前往四川凉山进行调研采访，您去过那里吗？要不要和我一起去看一下。'
+      owo.animate('bounceInRight', this.query('.message-box-2'), 1000)
+      owo.animate('bounceInLeft', this.query('.message-box-3'), 3000)
     },
     show: function () {
       document.querySelector('.top-bar').classList.add('black')
@@ -47,7 +56,9 @@
   width: 100%;
   background-image: url('@|liaotian-bg.jpg|');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  height: 100%;
+  padding-top: 180px;
 }
 .title-bar {
   position: absolute;
@@ -59,6 +70,7 @@
   font-weight: bold;
   background-color: white;
   border-bottom: 1px solid #bfbfbf;
+  z-index: 9;
 }
 .back-button {
   position: absolute;
@@ -69,9 +81,6 @@
   padding: 0 30px;
 }
 .message-item {
-  position: absolute;
-  right: 10px;
-  top: 170px;
   z-index: 999;
 }
 .blinker {
@@ -108,8 +117,8 @@
 }
 .duihua {
   position: absolute;
-  left: 226px;
-  top: 180px;
+  left: 165px;
+  top: 205px;
   z-index: 999;
   font-size: 30px;
   line-height: 37px;
@@ -117,5 +126,33 @@
   word-break: break-all;
   text-indent: 2em;
   color: #535151;
+}
+.duihua-2 {
+  position: absolute;
+  right: -78px;
+  top: 45px;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 37px;
+  width: 389px;
+  word-break: break-all;
+  text-indent: 2em;
+  color: #535151;
+}
+.duihua-3 {
+  position: absolute;
+  left: 99px;
+  top: 35px;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 37px;
+  width: 489px;
+  word-break: break-all;
+  text-indent: 2em;
+  color: #535151;
+}
+.message-box {
+  padding: 15px 20px;
+  position: relative;
 }
 </style>
