@@ -18,7 +18,10 @@
       document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-3 .notice-icon').style.display = 'block'
       document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-1 .notice-icon').style.display = 'block'
       // 播放音乐
-      new Audio("@|message.mp3|").play()
+      setTimeout(() => {
+        new Audio("@|message.mp3|").play()
+      }, 1000);
+      
       setTimeout(() => {
         owo.go("page3/view-content=menu2/scaleDown/scaleUp//scaleDown/scaleUpDown")
       }, 1000);

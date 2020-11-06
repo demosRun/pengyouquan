@@ -153,11 +153,20 @@
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
     .chart-box
+<<<<<<< HEAD
       img.user-image2(src="@|user-image-2.png|")
       .chart-conn
         h2 人民网媛媛
         img.conn-text(src="@|text-12.png|")
         img(src="@|link.png|")
+=======
+      img.user-image2(src="@|user-image-3.png|")
+      .chart-conn
+        h2 大凉山产品集市
+        img.conn-text(src="@|text-12.png|")
+        //- 广告条
+        img.float-ad(src="@|adfloat.png|")
+>>>>>>> f985e0e7c692c12b38785cf3ea01d241ef882b3c
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
@@ -166,6 +175,7 @@
       .chart-conn
         h2 人民网媛媛
         img.conn-text(src="@|text-13.png|")
+<<<<<<< HEAD
         .image-more-2.clear
           .image-more-item.fl
             a.smartphoto(href="@|img13.png|" data-caption="" data-id="1" data-group="3")
@@ -194,6 +204,69 @@
           .image-more-item.fl
             a.smartphoto(href="@|img21.png|" data-caption="" data-id="2" data-group="3")
               img(src="@|img21.png|")
+=======
+        .image-more.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img13.png|" data-caption="" data-id="1" data-group="5")
+              img(src="@|img13.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img14.png|" data-caption="" data-id="2" data-group="5")
+              img(src="@|img14.png|")
+        .local(style="background-image:url('@|local4.png|')")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-14.png|")
+        .video-box
+          //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          .cover(o-tap="playVideo")
+            img(src="@|play-video.png|")
+          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+        .local(style="background-image:url('@|local4.png|')")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-15.png|")
+        img(src="@|link-2.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-16.png|")
+        .image-more.clear
+          .image-more-item.fl
+            a.smartphoto(href="@|img15.png|" data-caption="" data-id="1" data-group="6")
+              img(src="@|img15.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img16.png|" data-caption="" data-id="2" data-group="6")
+              img(src="@|img16.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img17.png|" data-caption="" data-id="2" data-group="6")
+              img(src="@|img17.png|")
+          .image-more-item.fl
+            a.smartphoto(href="@|img18.png|" data-caption="" data-id="2" data-group="6")
+              img(src="@|img18.png|")
+        .time-box.clear
+          .time.fl 3分钟前
+          .fr.icon &#xe6ec;
+    .chart-box
+      img.user-image2(src="@|user-image-2.png|")
+      .chart-conn
+        h2 人民网媛媛
+        img.conn-text(src="@|text-17.png|")
+        img(src="@|link-3.png|")
+>>>>>>> f985e0e7c692c12b38785cf3ea01d241ef882b3c
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;

@@ -130,7 +130,30 @@ li {
   100% {transform: translateY(-2px);}
 }
 
+@-webkit-keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
 
+  to {
+    opacity: 70%;
+  }
+}
+
+@keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 70%;
+  }
+}
+
+[o-animation="flickerSmall"] {
+  -webkit-animation: flickerSmall 4s linear 0s infinite alternate;
+  animation: flickerSmall 4s linear 0s infinite alternate;
+}
 
 [o-animation="shrink"] {
   -webkit-animation: shrink 1s linear alternate infinite;
@@ -813,7 +836,9 @@ li {
   width: 100%;
   background-image: url('../resource/liaotian-bg.jpg');
   background-repeat: no-repeat;
-  background-size: 100% auto;
+  background-size: cover;
+  height: 100%;
+  padding-top: 180px;
 }
 
 .file .title-bar {
@@ -826,6 +851,7 @@ li {
   font-weight: bold;
   background-color: white;
   border-bottom: 1px solid #bfbfbf;
+  z-index: 9;
 }
 
 .file .back-button {
@@ -838,9 +864,6 @@ li {
 }
 
 .file .message-item {
-  position: absolute;
-  right: 10px;
-  top: 170px;
   z-index: 999;
 }
 
@@ -881,8 +904,8 @@ li {
 
 .file .duihua {
   position: absolute;
-  left: 226px;
-  top: 180px;
+  left: 165px;
+  top: 205px;
   z-index: 999;
   font-size: 30px;
   line-height: 37px;
@@ -890,6 +913,37 @@ li {
   word-break: break-all;
   text-indent: 2em;
   color: #535151;
+}
+
+.file .duihua-2 {
+  position: absolute;
+  right: -78px;
+  top: 45px;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 37px;
+  width: 389px;
+  word-break: break-all;
+  text-indent: 2em;
+  color: #535151;
+}
+
+.file .duihua-3 {
+  position: absolute;
+  left: 99px;
+  top: 35px;
+  z-index: 999;
+  font-size: 30px;
+  line-height: 37px;
+  width: 489px;
+  word-break: break-all;
+  text-indent: 2em;
+  color: #535151;
+}
+
+.file .message-box {
+  padding: 15px 20px;
+  position: relative;
 }
 .top-bar {
   background-image: url('../resource/top-bar.png');
@@ -1197,5 +1251,77 @@ li {
 .bounceIn {
   animation-duration: 0.75s;
   animation-name: bounceIn;
+}
+
+@keyframes bounceInRight {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  from {
+    opacity: 0;
+    transform: translate3d(3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(-25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInRight {
+  animation-name: bounceInRight;
+}
+
+@keyframes bounceInLeft {
+  from,
+  60%,
+  75%,
+  90%,
+  to {
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+
+  0% {
+    opacity: 0;
+    transform: translate3d(-3000px, 0, 0);
+  }
+
+  60% {
+    opacity: 1;
+    transform: translate3d(25px, 0, 0);
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.bounceInLeft {
+  animation-name: bounceInLeft;
 }
 
