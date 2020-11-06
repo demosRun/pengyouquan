@@ -130,7 +130,30 @@ li {
   100% {transform: translateY(-2px);}
 }
 
+@-webkit-keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
 
+  to {
+    opacity: 70%;
+  }
+}
+
+@keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 70%;
+  }
+}
+
+[o-animation="flickerSmall"] {
+  -webkit-animation: flickerSmall 4s linear 0s infinite alternate;
+  animation: flickerSmall 4s linear 0s infinite alternate;
+}
 
 [o-animation="shrink"] {
   -webkit-animation: shrink 1s linear alternate infinite;
@@ -647,6 +670,40 @@ li {
   display: block;
   margin: 25px auto;
 }
+
+.menu-3 .chart-box a {
+  display: block;
+}
+
+.menu-3 .select-box {
+  background-color: #f2f1f1;
+  display: flex;
+}
+
+.menu-3 .select-box .select-icon {
+  width: 100%;
+  height: 60px;
+  background-image: url('../resource/lan.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100px;
+}
+
+.menu-3 .select-box .select-box-item {
+  width: 25%;
+  font-size: 30px;
+  color: #6a84b4;
+  line-height: 40px;
+  text-align: center;
+}
+
+.menu-3 .select-box .active .select-icon {
+  background-image: url('../resource/hong.png');
+}
+
+.menu-3 .select-box .active span {
+  color: #f2343f;
+}
 .menu-3 {
   background-color: #ededed;
 }
@@ -954,7 +1011,8 @@ li {
   position: absolute;
   left: 240px;
   margin: 0 auto;
-  top: 369px;
+  top: 390px;
+  width: 440px;
 }
 
 .page5 p {

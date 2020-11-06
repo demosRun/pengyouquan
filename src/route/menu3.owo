@@ -23,10 +23,10 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B4%9B%E5%93%88%E6%9D%91.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
         .local(style="background-image:url('@|local.png|')")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 12分钟前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -47,7 +47,7 @@
             a.smartphoto(href="@|img4.png|" data-caption="" data-id="4" data-group="0")
               img(src="@|img4.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 24分钟前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -62,7 +62,7 @@
             a.smartphoto(href="@|img6.png|" data-caption="" data-id="2" data-group="1")
               img(src="@|img6.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 24分钟前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -73,10 +73,10 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E9%9B%86%E4%B8%AD%E5%AE%89%E7%BD%AE%E7%82%B9%E6%B2%90%E6%81%A9%E9%82%B8%E7%A4%BE%E5%8C%BA.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
         .local(style="background-image:url('@|local2.png|')")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 30分钟前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -91,16 +91,17 @@
             a.smartphoto(href="@|img8.png|" data-caption="" data-id="2" data-group="2")
               img(src="@|img8.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 52分钟前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
       .chart-conn
         h2 人民网媛媛
         img.conn-text(src="@|text-7.png|")
-        img(src="@|link.png|")
+        a(href="http://ddkz.people.cn/n1/2020/0930/c433253-31881185.html")
+          img(src="@|link.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1小时前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -109,7 +110,7 @@
         img.conn-text(src="@|text-8.png|")
         img(src="@|img9.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1小时前
           .fr.icon &#xe6ec;
         img(src="@|img10.png|")
     .chart-box
@@ -121,7 +122,7 @@
         //- 广告条
         img.float-ad(src="@|adfloat.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1小时前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -137,7 +138,7 @@
               img(src="@|img12.png|")
         .local(style="background-image:url('@|local3.png|')")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 2小时前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -148,20 +149,21 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B3%BD%E9%B2%81%E5%B0%8F%E5%AD%A6.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1小时前
           .fr.icon &#xe6ec;
     .chart-box
-      img.user-image2(src="@|user-image-3.png|")
+      img.user-image2(src="@|user-image-2.png|")
       .chart-conn
-        h2 大凉山产品集市
+        h2 人民网媛媛
         img.conn-text(src="@|text-12-1.png|")
-        img(src="@|link2.png|")
+        a(href="https://weibo.com/2286908003/JlZRbsj32?refer_flag=1001030103_&type=comment#_rnd1602229885976")
+          img(src="@|link2.png|")
         //- 广告条
         img.float-ad(src="@|adfloat.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 5小时前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -210,7 +212,7 @@
               img(src="@|img14-1.png|")
         .local(style="background-image:url('@|local4.png|')")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 6小时前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -221,19 +223,20 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="http://cunchu.site/show/mp4/dandelion.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E5%BD%9D%E6%B5%B7%E7%BB%93%E7%9B%9F%E7%BA%AA%E5%BF%B5%E5%9C%B0.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
         .local(style="background-image:url('@|local4.png|')")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1天前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
       .chart-conn
         h2 人民网媛媛
         img.conn-text(src="@|text-15.png|")
-        img(src="@|link-2.png|")
+        a(href="http://ddkz.people.cn/n1/2020/0930/c433253-31880766.html")
+          img(src="@|link-2.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1天前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
@@ -254,16 +257,28 @@
             a.smartphoto(href="@|img18-1.png|" data-caption="" data-id="2" data-group="6")
               img(src="@|img18-1.png|")
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1天前
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
       .chart-conn
         h2 人民网媛媛
         img.conn-text(src="@|text-17.png|")
-        img(src="@|link-3.png|")
+        .select-box
+          .select-box-item.active(o-tap="selectIndex(0)")
+            .select-icon
+            span 布拖
+          .select-box-item(o-tap="selectIndex(1)")
+            .select-icon
+            span 昭觉
+          .select-box-item(o-tap="selectIndex(2)")
+            .select-icon
+            span 德昌
+          .select-box-item(o-tap="selectIndex(3)")
+            .select-icon
+            span 冕宁
         .time-box.clear
-          .time.fl 3分钟前
+          .time.fl 1天前
           .fr.icon &#xe6ec;
       img.share-button(src="@|share-button.png|" o-animation="shrink" go="page5/view-content=menu2/rotatePushLeft/moveFromRight&&ontop//rotatePushRight/moveFromLeft&&ontop")
 </template>
@@ -298,6 +313,34 @@
         parentElement.querySelector('video').play()
       }
       
+    },
+    selectIndex: function (index) {
+      let imgList = [
+        [
+          '@|pic-1.JPG|',
+          '@|pic-2.JPG|'
+        ],
+        [
+          '@|pic-3.JPG|',
+          '@|pic-4.JPG|',
+        ],
+        [
+          '@|pic-5.JPG|',
+          '@|pic-6.JPG|',
+        ],
+        [
+          '@|pic-7.JPG|',
+          '@|pic-8.JPG|',
+        ],
+      ]
+      index = parseInt(index)
+      let list = this.queryAll('.select-box-item')
+      console.log(list[index])
+      list.forEach(element => {
+        element.classList.remove('active')
+      });
+      owo.script.page5.data.imageList = imgList[index]
+      list[index].classList.add('active')
     }
   }
 </script>
@@ -480,5 +523,36 @@
 .share-button {
   display: block;
   margin: 25px auto;
+}
+.chart-box a {
+  display: block;
+}
+.select-box {
+  background-color: #f2f1f1;
+  display: flex;
+  
+  .select-icon {
+    width: 100%;
+    height: 60px;
+    background-image: url('@|lan.png|');
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+  }
+  .select-box-item {
+    width: 25%;
+    font-size: 30px;
+    color: #6a84b4;
+    line-height: 40px;
+    text-align: center;
+  }
+  .active {
+    .select-icon {
+      background-image: url('@|hong.png|');
+    }
+    span {
+      color: #f2343f;
+    }
+  }
 }
 </style>
