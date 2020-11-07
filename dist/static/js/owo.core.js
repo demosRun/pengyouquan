@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 // Sat Nov 07 2020 13:45:03 GMT+0800 (GMT+08:00)
+=======
+// Fri Nov 06 2020 20:53:58 GMT+0800 (GMT+08:00)
+>>>>>>> 6dbe8ef19eda70cba85dc80dddee2bb3c9d1ee5f
 var owo = {tool: {},state: {},};
 /* 方法合集 */
 var _owo = {

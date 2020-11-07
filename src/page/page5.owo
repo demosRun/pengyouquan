@@ -1,15 +1,15 @@
 <template lang="pug">
 .page5
   img.change(src="@|change.png|" o-animation="shrink" o-tap="changeImg")
-  img.share-image(src="@|share-image-1.png|")
+  img.share-image(src="@|pic-1.JPG|")
   p
 </template>
 <script>
 module.exports = {
   data: {
     imageList: [
-      '@|share-image-1.png|',
-      '@|share-image.png|',
+      '@|pic-1.JPG|',
+      '@|pic-2.JPG|'
     ],
     activeIndex: 0
   },
@@ -21,6 +21,8 @@ module.exports = {
     this.query('.share-image').src = this.data.imageList[this.data.activeIndex]
   },
   show: function () {
+    this.data.activeIndex = randomNum(0, 1)
+    this.query('.share-image').src = this.data.imageList[this.data.activeIndex]
     this.query('p').innerText = userInfo.nickName + '恭喜你成为第' + voiteaNum + '打卡四川大凉山的用户，快邀请朋友一起打卡四川凉山吧，为脱贫攻坚加油！'
   }
 }
@@ -38,7 +40,8 @@ module.exports = {
   position: absolute;
   left: 240px;
   margin: 0 auto;
-  top: 369px;
+  top: 390px;
+  width: 440px;
 }
 p {
   position: absolute;
