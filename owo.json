@@ -94,6 +94,11 @@
 		{
 			"name": "smartphoto",
 			"src": "https://cunchu.site/ozzx/script/smartphoto.js"
+		},
+		{
+			"name": "toast",
+			"afterbody": true,
+			"src": "./owo_modules/toast.js"
 		}
 	],
 	"styleList": [
@@ -152,6 +157,11 @@
 			"name": "page5",
 			"src": "/src/page/page5.owo",
 			"type": "page"
+		},
+		{
+			"name": "music",
+			"src": "https://template.owo.ink/947eded0f03783ad.owo",
+			"type": "block"
 		}
 	],
 	"mode": {

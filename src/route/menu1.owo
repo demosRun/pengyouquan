@@ -16,8 +16,17 @@
 
 <script>
   module.exports = {
+    data: {
+      showChart: false
+    },
     show: function () {
-      this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！'
+      if (!this.data.showChart) {
+        this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！'
+        document.querySelector('.menu-2 .blinker2').style.display = 'none'
+      } else {
+        owo.tool.toast('点击朋友圈看看吧')
+      }
+      
       // this.query('.guide').style.bottom = -autoScaleInfo.hideHeight + 180  + 'px'
       // setTimeout(() => {
       //   this.query('.blinker').style.opacity = 1

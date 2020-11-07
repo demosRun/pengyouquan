@@ -24,6 +24,13 @@
       
       setTimeout(() => {
         owo.go("page3/view-content=menu2/scaleDown/scaleUp//scaleDown/scaleUpDown")
+        // 继续显示指引
+        setTimeout(() => {
+          document.querySelector('.menu-2 .friend-bar').style.zIndex = '1'
+          document.querySelector('.page-3 .bottom-bar').style.zIndex = '999'
+          document.querySelector('.menu-2 .blinker2').style.display = 'block'
+          document.querySelector('.menu-2 .blinker2').style.opacity = '1'
+        }, 1000);
       }, 1000);
     }
   }
