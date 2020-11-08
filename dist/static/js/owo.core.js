@@ -1,4 +1,12 @@
+<<<<<<< HEAD
 // Sun Nov 08 2020 23:52:11 GMT+0800 (GMT+08:00)
+=======
+<<<<<<< HEAD
+// Sat Nov 07 2020 13:45:03 GMT+0800 (GMT+08:00)
+=======
+// Fri Nov 06 2020 20:53:58 GMT+0800 (GMT+08:00)
+>>>>>>> 6dbe8ef19eda70cba85dc80dddee2bb3c9d1ee5f
+>>>>>>> 44c10b911bc45ff90deccfad723edb719d204c95
 var owo = {tool: {},state: {},};
 /* 方法合集 */
 var _owo = {
@@ -861,6 +869,11 @@ _owo.showPage = function() {
   // 取出URL地址判断当前所在页面
   var pageArg = _owo.getarg(window.location.hash)
   
+  if (pageArg !== null) {
+    window.location.href = ''
+    return
+  }
+  
   
 
   // 从配置项中取出程序入口
@@ -994,21 +1007,4 @@ function switchPage (oldUrlParam, newUrlParam) {
 if (window.onhashchange) {window.onhashchange = _owo.hashchange;} else {window.onpopstate = _owo.hashchange;}
 // 执行页面加载完毕方法
 _owo.ready(_owo.showPage)
-
-
-// 这是用于代码调试的自动刷新代码，他不应该出现在正式上线版本!
-if ("WebSocket" in window) {
-  // 打开一个 web socket
-  if (!window._owo.ws) window._owo.ws = new WebSocket("ws://" + window.location.host)
-  window._owo.ws.onmessage = function (evt) { 
-    if (evt.data == 'reload') {
-      location.reload()
-    }
-  }
-  window._owo.ws.onclose = function() { 
-    console.info('与服务器断开连接')
-  }
-} else {
-  console.error('浏览器不支持WebSocket')
-}
 
