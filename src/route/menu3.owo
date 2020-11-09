@@ -161,7 +161,7 @@
         a(href="https://weibo.com/2286908003/JlZRbsj32?refer_flag=1001030103_&type=comment#_rnd1602229885976")
           img(src="@|link2.png|")
         //- 广告条
-        img.float-ad(src="@|adfloat.png|")
+        //- img.float-ad(src="@|adfloat.png|")
         .time-box.clear
           .time.fl 5小时前
           .fr.icon &#xe6ec;
@@ -267,16 +267,16 @@
         .select-box
           .select-box-item.active(o-tap="selectIndex(0)")
             .select-icon
-            span 布拖
+            span 德昌
           .select-box-item(o-tap="selectIndex(1)")
             .select-icon
-            span 昭觉
+            span 布拖
           .select-box-item(o-tap="selectIndex(2)")
             .select-icon
-            span 德昌
+            span 冕宁
           .select-box-item(o-tap="selectIndex(3)")
             .select-icon
-            span 冕宁
+            span 昭觉
         .time-box.clear
           .time.fl 1天前
           .fr.icon &#xe6ec;
@@ -340,6 +340,7 @@
         element.classList.remove('active')
       });
       owo.script.page5.data.imageList = imgList[index]
+      document.querySelector('.page5 .share-image').src = imgList[index][0]
       list[index].classList.add('active')
     }
   }
