@@ -336,39 +336,6 @@ li {
   margin: auto;
 }
 
-.menu-1 .blinker {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99;
-  left: 0;
-  top: 0;
-  transition: opacity 1s;
-  opacity: 0;
-}
-
-.menu-1 .blinker .guide {
-  position: absolute;
-  left: -205px;
-  right: 0;
-  margin: auto;
-  width: 300px;
-  height: 200px;
-}
-
-.menu-1 .blinker .text {
-  color: white;
-  line-height: 80px;
-  font-size: 34px;
-  text-align: center;
-}
-
-.menu-1 .blinker img {
-  display: block;
-  margin: 0 auto;
-}
-
 .menu-1 .notice {
   position: absolute;
   left: 110px;
@@ -382,6 +349,41 @@ li {
   left: 155px;
   font-size: 28px;
   line-height: 30px;
+}
+
+.menu-1 .blinker3 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99;
+  transition: opacity 1s;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: none;
+}
+
+.menu-1 .blinker3 .guide {
+  position: absolute;
+  left: 200px;
+  right: 0;
+  margin: auto;
+  width: 300px;
+  height: 200px;
+  bottom: 295px;
+}
+
+.menu-1 .blinker3 .text {
+  color: white;
+  line-height: 80px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.menu-1 .blinker3 img {
+  display: block;
+  margin: 0 auto;
 }
 .menu-2 img {
   display: block;
@@ -434,7 +436,8 @@ li {
 
 .menu-2 .blinker2 .guide {
   left: -533px;
-  top: 970px;
+  bottom: 330px;
+  top: auto;
 }
 
 .menu-2 .h111 {
@@ -885,41 +888,6 @@ li {
 
 .file .message-item {
   z-index: 999;
-}
-
-.file .blinker {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99;
-  left: 0;
-  top: 0;
-  transition: opacity 1s;
-  opacity: 0;
-}
-
-.file .blinker .guide {
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 300px;
-  height: 200px;
-  top: 650px;
-}
-
-.file .blinker .text {
-  color: white;
-  line-height: 80px;
-  font-size: 34px;
-  text-align: center;
-}
-
-.file .blinker img {
-  display: block;
-  margin: 0 auto;
-  transform: rotate(180deg);
 }
 
 .file .duihua {

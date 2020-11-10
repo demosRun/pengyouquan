@@ -2,7 +2,7 @@
 .file.auto-scroll-box
   .title-bar
     span 人民网媛媛
-    img.back-button(src="@|back.png|" go="page3/view-content=menu1/rotatePushRight/moveFromLeft&&ontop//scaleDown/scaleUpDown")
+    img.back-button(src="@|back.png|" o-tap="back")
   .conn-box
     img(src="@|time.png|" style=" position: absolute; left: 0; right: 0; margin: auto; top: 105px; ")
     .message-box.message-box-1.clear
@@ -15,11 +15,6 @@
       span.duihua-3 那就去朋友圈看看吧～
     //- 对话内容
     .duihua
-  //- 遮蔽罩
-  //- .blinker
-  //-   .guide.handbottom(o-animation="floatUpDown")
-  //-     img(src="@|hand.png|")
-  //-     .text 点击查看消息
 </template>
 
 <script>
@@ -33,7 +28,7 @@
       this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！最近，我们“大道康庄——人民网全媒体调研行”前往四川凉山进行调研采访，您去过那里吗？要不要和我一起去看一下。'
       owo.animate('bounceInRight', this.query('.message-box-2'), 1000)
       owo.animate('bounceInLeft', this.query('.message-box-3'), 3000)
-      owo.script.page3.view.content.menu1.data = true
+      // owo.script.page3.view.content.menu1.data = true
     },
     show: function () {
       document.querySelector('.top-bar').classList.add('black')
@@ -43,6 +38,14 @@
     next: function () {
       owo.go('page3/view-content=menu3/rotatePushRight/moveFromLeft&&ontop//scaleDown/scaleUpDown')
       document.querySelector('.file .blinker').style.display = 'none'
+    },
+    back: function () {
+      owo.go('page3/view-content=menu1/rotatePushRight/moveFromLeft&&ontop//scaleDown/scaleUpDown')
+      document.querySelector('.blinker3').style.display = 'block'
+      setTimeout(() => {
+        document.querySelector('.blinker3').style.opacity = '1'
+        document.querySelector('.bottom-bar').style.zIndex = '999'
+      }, 1000);
     }
   }
 </script>
@@ -83,38 +86,6 @@
 }
 .message-item {
   z-index: 999;
-}
-.blinker {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  z-index: 99;
-  left: 0;
-  top: 0;
-  transition: opacity 1s;
-  opacity: 0;
-  
-  .guide {
-    position: absolute;
-    left: 0;
-    right: 0;
-    margin: auto;
-    width: 300px;
-    height: 200px;
-    top: 650px;
-  }
-  .text {
-    color: white;
-    line-height: 80px;
-    font-size: 34px;
-    text-align: center;
-  }
-  img {
-    display: block;
-    margin: 0 auto;
-    transform:rotate(180deg);
-  }
 }
 .duihua {
   position: absolute;

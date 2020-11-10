@@ -72,10 +72,11 @@ img {
     margin: 0 auto;
   }
 }
- .blinker2 .guide {
-   left: -533px;
-   top: 970px;
- }
+.blinker2 .guide {
+  left: -533px;
+  bottom: 330px;
+  top: auto;
+}
 .touch-bar {
   
 }

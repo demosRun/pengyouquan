@@ -302,6 +302,8 @@
     show: function () {
       // 朋友圈红点
       document.querySelector('.page-3 .bottom-bar-item.bottom-bar-item-3 .notice-icon').style.display = 'none'
+      document.querySelector('.blinker3').style.opacity = '0'
+      document.querySelector('.blinker3').style.display = 'none'
     },
     fabulous: function () {
       
