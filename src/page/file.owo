@@ -12,7 +12,7 @@
       span.duihua-2 好的～
     .message-box.message-box-3.clear
       img.message-item(src="@|message-3.png|")
-      span.duihua-3 那就去我的朋友圈看看吧～
+      span.duihua-3 那就去朋友圈看看吧～
     //- 对话内容
     .duihua
   //- 遮蔽罩

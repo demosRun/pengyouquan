@@ -11,7 +11,7 @@
         h2 人民网媛媛
         img.conn-text(src="@|text-1.png|")
         a(href="http://ddkz.people.cn/n1/2020/1028/c433292-31908768.html")
-          img(src="@|test-1.png|")
+          img(src="@|77bd8bb71b9a65c15cbb80bbd594443.png|")
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
