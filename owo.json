@@ -99,6 +99,10 @@
 			"name": "toast",
 			"afterbody": true,
 			"src": "./owo_modules/toast.js"
+		},
+		{
+			"name": "html2canvas",
+			"src": "./owo_modules/html2canvas.min.js"
 		}
 	],
 	"styleList": [
@@ -178,7 +182,7 @@
 			"serverPort": 8000,
 			"server": true,
 			"autoReload": true,
-			"remoteDebug": false,
+			"remoteDebug": true,
 			"watcherEnable": true
 		},
 		"build": {

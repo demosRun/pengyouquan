@@ -28,6 +28,9 @@
       this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！最近，我们“大道康庄——人民网全媒体调研行”前往四川凉山进行调研采访，您去过那里吗？要不要和我一起去看一下。'
       owo.animate('bounceInRight', this.query('.message-box-2'), 1000)
       owo.animate('bounceInLeft', this.query('.message-box-3'), 3000)
+      setTimeout(() => {
+        owo.tool.toast('点击左上角返回!')
+      }, 3000);
       // owo.script.page3.view.content.menu1.data = true
     },
     show: function () {

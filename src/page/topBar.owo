@@ -1,5 +1,5 @@
 <template lang="pug">
-.top-bar 12:10
+.top-bar.hide-to-image 12:10
   
 </template>
 

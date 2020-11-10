@@ -588,13 +588,14 @@
     </div>
     <!-- 页面[page5]-->
     <div class="page5 page" template="page5" style="display: none;">
-      <img class="change" src="./static/resource/change.png" o-animation="shrink" o-tap="changeImg">
+      <img class="change hide-to-image" src="./static/resource/change.png" o-animation="shrink" o-tap="changeImg">
       <img class="share-image" src="./static/resource/pic-1.JPG">
       <p></p>
+      <img class="hide-to-image canvas-image">
     </div>
   </div>
   <!-- 插件[topBar]-->
-  <div class="top-bar owo-block" template="topBar" style="display: none;">12:10</div>
+  <div class="top-bar hide-to-image owo-block" template="topBar" style="display: none;">12:10</div>
   <!-- 插件[music]-->
   <div class="music-menu owo-block" template="music" style="display: none;">
     <img class="music-icon" src="https://cunchu.site/ozzx/resource/music.png" o-tap="switchPlay">
@@ -837,7 +838,10 @@
           document.querySelector('.menu-1 .notice').style.display = 'none';
           this.query('.duihua').innerText = userInfo.nickName + '，您好！很高兴认识您！最近，我们“大道康庄——人民网全媒体调研行”前往四川凉山进行调研采访，您去过那里吗？要不要和我一起去看一下。';
           owo.animate('bounceInRight', this.query('.message-box-2'), 1000);
-          owo.animate('bounceInLeft', this.query('.message-box-3'), 3000); // owo.script.page3.view.content.menu1.data = true
+          owo.animate('bounceInLeft', this.query('.message-box-3'), 3000);
+          setTimeout(function() {
+            owo.tool.toast('点击左上角返回!');
+          }, 3000); // owo.script.page3.view.content.menu1.data = true
         },
         "show": function show() {
           document.querySelector('.top-bar').classList.add('black'); // 微信红点
@@ -871,6 +875,8 @@
           "activeIndex": 0
         },
         "changeImg": function changeImg() {
+          var _this5 = this;
+
           this.data.activeIndex++;
 
           if (this.data.activeIndex > this.data.imageList.length - 1) {
@@ -878,11 +884,36 @@
           }
 
           this.query('.share-image').src = this.data.imageList[this.data.activeIndex];
+          setTimeout(function() {
+            _this5.cutPic();
+          }, 500);
         },
         "show": function show() {
           this.data.activeIndex = randomNum(0, 1);
           this.query('.share-image').src = this.data.imageList[this.data.activeIndex];
           this.query('p').innerText = userInfo.nickName + '恭喜你成为第' + voiteaNum + '打卡四川大凉山的用户，快邀请朋友一起打卡吧，为脱贫攻坚加油！';
+        },
+        "created": function created() {
+          var _this6 = this;
+
+          setTimeout(function() {
+            _this6.cutPic();
+          }, 1500);
+        },
+        "cutPic": function cutPic() {
+          var _this7 = this;
+
+          html2canvas(document.body, {
+            height: window.innerHeight,
+            ignoreElements: function ignoreElements(element) {
+              console.log(element);
+              if (element.classList.contains('hide-to-image')) return true;
+              else return false;
+            }
+          }).then(function(canvas) {
+            var base64Img = canvas.toDataURL('image/jpg');
+            _this7.query('.canvas-image').src = base64Img;
+          });
         }
       },
       "music": {
@@ -924,6 +955,7 @@
   <script src="./static/js/autoScale.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/main.js" type="text/javascript" charset="UTF-8"></script>
   <script src="https://cunchu.site/ozzx/script/smartphoto.js" type="text/javascript" charset="UTF-8"></script>
+  <script src="./static/js/html2canvas.js" type="text/javascript" charset="UTF-8"></script>
 
   <script src="./static/js/heart.js" type="text/javascript" charset="UTF-8"></script>
   <script src="./static/js/toast.js" type="text/javascript" charset="UTF-8"></script>

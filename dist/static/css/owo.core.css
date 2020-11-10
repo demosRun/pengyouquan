@@ -953,12 +953,14 @@ li {
 }
 .page5 {
   background-image: url('../resource/share-bg.jpg');
+  margin-top: -50px;
 }
 
 .page5 .change {
   position: absolute;
   right: 45px;
   top: 240px;
+  z-index: 1000;
 }
 
 .page5 .share-image {
@@ -977,6 +979,14 @@ li {
   line-height: 67px;
   width: 600px;
   color: #563717;
+}
+
+.page5 .canvas-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  opacity: 0;
 }
 .music-menu {
   position: absolute;
