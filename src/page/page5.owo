@@ -30,16 +30,18 @@ module.exports = {
     this.query('p').innerText = userInfo.nickName + '恭喜你成为第' + voiteaNum + '打卡四川大凉山的用户，快邀请朋友一起打卡吧，为脱贫攻坚加油！'
   },
   created: function () {
+    if (window.innerHeight < 670) {
+      this.$el.style.marginTop = '-90px'
+    }
     setTimeout(() => {
       this.cutPic()
     }, 1500);
   },
   cutPic: function () {
-    
     html2canvas(document.body, {
       height: window.innerHeight,
       ignoreElements:(element)=>{
-        console.log(element)
+        // console.log(element)
         if (element.classList.contains('hide-to-image')) return true;
         else return false
       }
@@ -53,7 +55,6 @@ module.exports = {
 <style lang="less">
 .page5 {
   background-image: url('@|share-bg.jpg|');
-  margin-top: -50px;
 }
 .change {
   position: absolute;

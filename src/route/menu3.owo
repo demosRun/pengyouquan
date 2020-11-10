@@ -24,7 +24,7 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B4%9B%E5%93%88%E6%9D%91.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B4%9B%E5%93%88%E6%9D%91.mp4" controls poster="@|pic-4.JPG|")
         .local(style="background-image:url('@|local.png|')")
         .time-box.clear
           .time.fl 12分钟前
@@ -74,7 +74,7 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="https://demos.run/pengyouquan/%E9%9B%86%E4%B8%AD%E5%AE%89%E7%BD%AE%E7%82%B9%E6%B2%90%E6%81%A9%E9%82%B8%E7%A4%BE%E5%8C%BA.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E9%9B%86%E4%B8%AD%E5%AE%89%E7%BD%AE%E7%82%B9%E6%B2%90%E6%81%A9%E9%82%B8%E7%A4%BE%E5%8C%BA.mp4" controls poster="@|pic-7.JPG|")
         .local(style="background-image:url('@|local2.png|')")
         .time-box.clear
           .time.fl 30分钟前
@@ -150,7 +150,7 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B3%BD%E9%B2%81%E5%B0%8F%E5%AD%A6.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B3%BD%E9%B2%81%E5%B0%8F%E5%AD%A6.mp4" controls poster="@|pic-3.JPG|")
         .time-box.clear
           .time.fl 1小时前
           .fr.icon &#xe6ec;
@@ -224,7 +224,7 @@
           //- img.show-image(src="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
           .cover(o-tap="playVideo")
             img(src="@|play-video.png|")
-          video(src="https://demos.run/pengyouquan/%E5%BD%9D%E6%B5%B7%E7%BB%93%E7%9B%9F%E7%BA%AA%E5%BF%B5%E5%9C%B0.mp4" controls poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg")
+          video(src="https://demos.run/pengyouquan/%E5%BD%9D%E6%B5%B7%E7%BB%93%E7%9B%9F%E7%BA%AA%E5%BF%B5%E5%9C%B0.mp4" controls poster="@|49b535fccdcb2db0a8a6293b4228b95.jpg|")
         .local(style="background-image:url('@|local4.png|')")
         .time-box.clear
           .time.fl 1天前
@@ -289,12 +289,12 @@
   module.exports = {
     created: function () {
       this.queryAll('.time-box .icon').forEach(element => {
-        console.log(element)
+        // console.log(element)
         owo.tool.heart(element, (e) => {
           element.classList.add('active')
         })
       });
-      console.log(autoScaleInfo.showHeight)
+      // console.log(autoScaleInfo.showHeight)
       setTimeout(function() {
         new SmartPhoto(".smartphoto");
       }, 0);

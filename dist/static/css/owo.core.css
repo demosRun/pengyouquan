@@ -130,7 +130,30 @@ li {
   100% {transform: translateY(-2px);}
 }
 
+@-webkit-keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
 
+  to {
+    opacity: 70%;
+  }
+}
+
+@keyframes flickerSmall {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 70%;
+  }
+}
+
+[o-animation="flickerSmall"] {
+  -webkit-animation: flickerSmall 4s linear 0s infinite alternate;
+  animation: flickerSmall 4s linear 0s infinite alternate;
+}
 
 [o-animation="shrink"] {
   -webkit-animation: shrink 1s linear alternate infinite;
@@ -953,7 +976,6 @@ li {
 }
 .page5 {
   background-image: url('../resource/share-bg.jpg');
-  margin-top: -50px;
 }
 
 .page5 .change {

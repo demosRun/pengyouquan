@@ -136,7 +136,7 @@
                   <div class="cover" o-tap="playVideo">
                     <img src="./static/resource/play-video.png">
                   </div>
-                  <video src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B4%9B%E5%93%88%E6%9D%91.mp4" controls="controls" poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg"></video>
+                  <video src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B4%9B%E5%93%88%E6%9D%91.mp4" controls="controls" poster="./static/resource/pic-4.JPG"></video>
                 </div>
                 <div class="local" style="background-image:url('./static/resource/local.png')"></div>
                 <div class="time-box clear">
@@ -210,7 +210,7 @@
                   <div class="cover" o-tap="playVideo">
                     <img src="./static/resource/play-video.png">
                   </div>
-                  <video src="https://demos.run/pengyouquan/%E9%9B%86%E4%B8%AD%E5%AE%89%E7%BD%AE%E7%82%B9%E6%B2%90%E6%81%A9%E9%82%B8%E7%A4%BE%E5%8C%BA.mp4" controls="controls" poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg"></video>
+                  <video src="https://demos.run/pengyouquan/%E9%9B%86%E4%B8%AD%E5%AE%89%E7%BD%AE%E7%82%B9%E6%B2%90%E6%81%A9%E9%82%B8%E7%A4%BE%E5%8C%BA.mp4" controls="controls" poster="./static/resource/pic-7.JPG"></video>
                 </div>
                 <div class="local" style="background-image:url('./static/resource/local2.png')"></div>
                 <div class="time-box clear">
@@ -314,7 +314,7 @@
                   <div class="cover" o-tap="playVideo">
                     <img src="./static/resource/play-video.png">
                   </div>
-                  <video src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B3%BD%E9%B2%81%E5%B0%8F%E5%AD%A6.mp4" controls="controls" poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg"></video>
+                  <video src="https://demos.run/pengyouquan/%E9%98%BF%E5%B8%83%E6%B3%BD%E9%B2%81%E5%B0%8F%E5%AD%A6.mp4" controls="controls" poster="./static/resource/pic-3.JPG"></video>
                 </div>
                 <div class="time-box clear">
                   <div class="time fl">1小时前</div>
@@ -423,7 +423,7 @@
                   <div class="cover" o-tap="playVideo">
                     <img src="./static/resource/play-video.png">
                   </div>
-                  <video src="https://demos.run/pengyouquan/%E5%BD%9D%E6%B5%B7%E7%BB%93%E7%9B%9F%E7%BA%AA%E5%BF%B5%E5%9C%B0.mp4" controls="controls" poster="http://www.people.com.cn/NMediaFile/2020/1027/MAIN202010270817032155769828066.jpg"></video>
+                  <video src="https://demos.run/pengyouquan/%E5%BD%9D%E6%B5%B7%E7%BB%93%E7%9B%9F%E7%BA%AA%E5%BF%B5%E5%9C%B0.mp4" controls="controls" poster="./static/resource/49b535fccdcb2db0a8a6293b4228b95.jpg"></video>
                 </div>
                 <div class="local" style="background-image:url('./static/resource/local4.png')"></div>
                 <div class="time-box clear">
@@ -748,12 +748,12 @@
           }, {
             "created": function created() {
               this.queryAll('.time-box .icon').forEach(function(element) {
-                console.log(element);
+                // console.log(element)
                 owo.tool.heart(element, function(e) {
                   element.classList.add('active');
                 });
-              });
-              console.log(autoScaleInfo.showHeight);
+              }); // console.log(autoScaleInfo.showHeight)
+
               setTimeout(function() {
                 new SmartPhoto(".smartphoto");
               }, 0);
@@ -896,6 +896,10 @@
         "created": function created() {
           var _this6 = this;
 
+          if (window.innerHeight < 670) {
+            this.$el.style.marginTop = '-90px';
+          }
+
           setTimeout(function() {
             _this6.cutPic();
           }, 1500);
@@ -906,7 +910,7 @@
           html2canvas(document.body, {
             height: window.innerHeight,
             ignoreElements: function ignoreElements(element) {
-              console.log(element);
+              // console.log(element)
               if (element.classList.contains('hide-to-image')) return true;
               else return false;
             }
