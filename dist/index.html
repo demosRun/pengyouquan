@@ -112,7 +112,9 @@
               <div class="chart-conn">
                 <h2>人民网媛媛</h2>
                 <img class="conn-text" src="./static/resource/text-1.png">
-                <img src="./static/resource/test-1.png">
+                <a href="http://ddkz.people.cn/n1/2020/1028/c433292-31908768.html">
+                  <img src="./static/resource/test-1.png">
+                </a>
                 <div class="time-box clear">
                   <div class="time fl">3分钟前</div>
                   <div class="fr icon"></div>
@@ -266,10 +268,9 @@
               <div class="chart-conn">
                 <h2>农民夜校</h2>
                 <img class="conn-text" src="./static/resource/text-9.png">
-                <img src="./static/resource/link2.png">
                 <img class="float-ad" src="./static/resource/adfloat.png">
                 <div class="time-box clear">
-                  <div class="time fl">1小时前</div>
+                  <div class="time fl">1小时前 最近有299292人关注</div>
                   <div class="fr icon"></div>
                 </div>
               </div>
@@ -866,7 +867,7 @@
         "show": function show() {
           this.data.activeIndex = randomNum(0, 1);
           this.query('.share-image').src = this.data.imageList[this.data.activeIndex];
-          this.query('p').innerText = userInfo.nickName + '恭喜你成为第' + voiteaNum + '打卡四川大凉山的用户，快邀请朋友一起打卡四川凉山吧，为脱贫攻坚加油！';
+          this.query('p').innerText = userInfo.nickName + '恭喜你成为第' + voiteaNum + '打卡四川大凉山的用户，快邀请朋友一起打卡吧，为脱贫攻坚加油！';
         }
       },
       "music": {

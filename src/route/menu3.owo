@@ -10,7 +10,8 @@
       .chart-conn
         h2 人民网媛媛
         img.conn-text(src="@|text-1.png|")
-        img(src="@|test-1.png|")
+        a(href="http://ddkz.people.cn/n1/2020/1028/c433292-31908768.html")
+          img(src="@|test-1.png|")
         .time-box.clear
           .time.fl 3分钟前
           .fr.icon &#xe6ec;
@@ -118,11 +119,11 @@
       .chart-conn
         h2 农民夜校
         img.conn-text(src="@|text-9.png|")
-        img(src="@|link2.png|")
+        //- img(src="@|link2.png|")
         //- 广告条
         img.float-ad(src="@|adfloat.png|")
         .time-box.clear
-          .time.fl 1小时前
+          .time.fl 1小时前 最近有299292人关注
           .fr.icon &#xe6ec;
     .chart-box
       img.user-image2(src="@|user-image-2.png|")
